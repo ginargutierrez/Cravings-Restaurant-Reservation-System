@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E60F01CD-B55B-41EC-8C5E-33F40540C6D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>Buffet Cravings Restaurant %28CS%29</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <DependentUpon>Address.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ContactNo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactNo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Date.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Date.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirstName.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FirstName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastName.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleName.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MiddleName.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NoOfPeople.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NoOfPeople.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableNo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableNo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionNo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionNo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TypeOfMeal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeOfMeal.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Address.xsc">
+      <DependentUpon>Address.xsd</DependentUpon>
+    </None>
+    <None Include="Address.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Address.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Address.xss">
+      <DependentUpon>Address.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ContactNo.xsc">
+      <DependentUpon>ContactNo.xsd</DependentUpon>
+    </None>
+    <None Include="ContactNo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactNo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ContactNo.xss">
+      <DependentUpon>ContactNo.xsd</DependentUpon>
+    </None>
+    <None Include="Date.xsc">
+      <DependentUpon>Date.xsd</DependentUpon>
+    </None>
+    <None Include="Date.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Date.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Date.xss">
+      <DependentUpon>Date.xsd</DependentUpon>
+    </None>
+    <None Include="FirstName.xsc">
+      <DependentUpon>FirstName.xsd</DependentUpon>
+    </None>
+    <None Include="FirstName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FirstName.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FirstName.xss">
+      <DependentUpon>FirstName.xsd</DependentUpon>
+    </None>
+    <None Include="LastName.xsc">
+      <DependentUpon>LastName.xsd</DependentUpon>
+    </None>
+    <None Include="LastName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastName.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastName.xss">
+      <DependentUpon>LastName.xsd</DependentUpon>
+    </None>
+    <None Include="MiddleName.xsc">
+      <DependentUpon>MiddleName.xsd</DependentUpon>
+    </None>
+    <None Include="MiddleName.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiddleName.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MiddleName.xss">
+      <DependentUpon>MiddleName.xsd</DependentUpon>
+    </None>
+    <None Include="NoOfPeople.xsc">
+      <DependentUpon>NoOfPeople.xsd</DependentUpon>
+    </None>
+    <None Include="NoOfPeople.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NoOfPeople.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NoOfPeople.xss">
+      <DependentUpon>NoOfPeople.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TableNo.xsc">
+      <DependentUpon>TableNo.xsd</DependentUpon>
+    </None>
+    <None Include="TableNo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TableNo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TableNo.xss">
+      <DependentUpon>TableNo.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionNo.xsc">
+      <DependentUpon>TransactionNo.xsd</DependentUpon>
+    </None>
+    <None Include="TransactionNo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransactionNo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransactionNo.xss">
+      <DependentUpon>TransactionNo.xsd</DependentUpon>
+    </None>
+    <None Include="TypeOfMeal.xsc">
+      <DependentUpon>TypeOfMeal.xsd</DependentUpon>
+    </None>
+    <None Include="TypeOfMeal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TypeOfMeal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TypeOfMeal.xss">
+      <DependentUpon>TypeOfMeal.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images-4.jpg" />
+    <None Include="icon.png" />
+    <None Include="images-6.jpg" />
+    <None Include="images-7.jpg" />
+    <Content Include="reservation.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

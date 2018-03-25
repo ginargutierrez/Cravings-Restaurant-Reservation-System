@@ -1,0 +1,134 @@
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\Joyce Bersola\Documents\Visual Studio 2010\Projects\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.CoreCompileInputs.cache
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Domi\Desktop\acads\vb.net\final\Buffet Cravings Restaurant (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS) - Copy\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\GinaG\Downloads\Buffet Cravings Restaurant (CS) - Copy\Cravings Restaurant Reservation System(CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\CPE314PC19\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.CoreCompileInputs.cache
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\CpE - Guest\Desktop\Mara Version - Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Mara Rabadon\Desktop\Mara Version 2- Cravings Restaurant Reservation System (CS)\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe.config
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\reservation.mdb
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).exe
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\Debug\Buffet Cravings Restaurant (CS).pdb
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csprojResolveAssemblyReference.cache
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form3.resources
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\GinaG\Desktop\Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\x86\Debug\Buffet Cravings Restaurant (CS).csproj.GenerateResource.Cache
