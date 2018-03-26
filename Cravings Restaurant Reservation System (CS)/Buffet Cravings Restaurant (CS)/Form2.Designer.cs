@@ -101,11 +101,13 @@
             this.btnHome2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape71 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastName)).BeginInit();
@@ -172,9 +174,10 @@
             // tableNoTextBox
             // 
             this.tableNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource, "LastName", true));
+            this.tableNoTextBox.Enabled = false;
             this.tableNoTextBox.Location = new System.Drawing.Point(255, 323);
             this.tableNoTextBox.Name = "tableNoTextBox";
-            this.tableNoTextBox.Size = new System.Drawing.Size(200, 20);
+            this.tableNoTextBox.Size = new System.Drawing.Size(51, 20);
             this.tableNoTextBox.TabIndex = 38;
             this.tableNoTextBox.TextChanged += new System.EventHandler(this.tableNoTextBox_TextChanged);
             // 
@@ -192,10 +195,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(458, 189);
+            this.label4.Font = new System.Drawing.Font("Cambria", 7.75F);
+            this.label4.Location = new System.Drawing.Point(458, 192);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 15);
+            this.label4.Size = new System.Drawing.Size(85, 12);
             this.label4.TabIndex = 37;
             this.label4.Text = "ex, 09972547217";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
@@ -232,6 +235,7 @@
             // dateDateTimePicker
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservationBindingSource6, "Date", true));
+            this.dateDateTimePicker.Enabled = false;
             this.dateDateTimePicker.Location = new System.Drawing.Point(255, 249);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
             this.dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
@@ -251,6 +255,7 @@
             // typeOfMealComboBox
             // 
             this.typeOfMealComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource5, "TypeOfMeal", true));
+            this.typeOfMealComboBox.Enabled = false;
             this.typeOfMealComboBox.FormattingEnabled = true;
             this.typeOfMealComboBox.Items.AddRange(new object[] {
             "Breakfast",
@@ -260,6 +265,7 @@
             this.typeOfMealComboBox.Name = "typeOfMealComboBox";
             this.typeOfMealComboBox.Size = new System.Drawing.Size(200, 21);
             this.typeOfMealComboBox.TabIndex = 31;
+            this.typeOfMealComboBox.SelectedIndexChanged += new System.EventHandler(this.typeOfMealComboBox_SelectedIndexChanged_1);
             // 
             // reservationBindingSource5
             // 
@@ -354,7 +360,6 @@
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(200, 20);
             this.lastNameTextBox.TabIndex = 26;
-            this.lastNameTextBox.Text = "s";
             this.lastNameTextBox.TextChanged += new System.EventHandler(this.lastNameTextBox_TextChanged);
             // 
             // label18
@@ -705,38 +710,41 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.shapeContainer1);
             this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 8;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(589, -3);
+            this.label29.Location = new System.Drawing.Point(584, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 9;
+            this.label29.TabIndex = 7;
             this.label29.Text = "-";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(611, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 19);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "X";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(606, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel23
             // 
@@ -766,15 +774,32 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cravings Restaurant";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(251, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Cravings Restaurant";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape71});
+            this.shapeContainer1.Size = new System.Drawing.Size(634, 82);
+            this.shapeContainer1.TabIndex = 5;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // rectangleShape71
+            // 
+            this.rectangleShape71.Location = new System.Drawing.Point(308, 33);
+            this.rectangleShape71.Name = "rectangleShape71";
+            this.rectangleShape71.Size = new System.Drawing.Size(19, 16);
             // 
             // Form2
             // 
@@ -782,8 +807,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(664, 621);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -891,15 +916,17 @@
         private System.Windows.Forms.PictureBox btnReservation2;
         private System.Windows.Forms.PictureBox btnCreate2;
         private System.Windows.Forms.PictureBox btnHome2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tableNoTextBox;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape71;
     }
 }

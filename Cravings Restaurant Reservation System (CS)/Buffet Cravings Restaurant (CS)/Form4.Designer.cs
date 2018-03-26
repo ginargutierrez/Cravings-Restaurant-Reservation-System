@@ -43,11 +43,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.rectangleShape71 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReservation4)).BeginInit();
@@ -206,40 +208,41 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.shapeContainer1);
             this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(14, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 40;
+            this.panel1.TabIndex = 42;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(584, 7);
+            this.label29.Location = new System.Drawing.Point(584, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 43;
+            this.label29.TabIndex = 7;
             this.label29.Text = "-";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // label16
+            // label1
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(606, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 19);
-            this.label16.TabIndex = 42;
-            this.label16.Text = "X";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(606, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel23
             // 
@@ -269,15 +272,32 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cravings Restaurant";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(251, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Cravings Restaurant";
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape71});
+            this.shapeContainer1.Size = new System.Drawing.Size(634, 82);
+            this.shapeContainer1.TabIndex = 5;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // rectangleShape71
+            // 
+            this.rectangleShape71.Location = new System.Drawing.Point(308, 33);
+            this.rectangleShape71.Name = "rectangleShape71";
+            this.rectangleShape71.Size = new System.Drawing.Size(19, 16);
             // 
             // Form4
             // 
@@ -286,9 +306,9 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.images_7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 621);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -321,14 +341,16 @@
         private System.Windows.Forms.PictureBox btnHome4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label5;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape71;
 
     }
 }

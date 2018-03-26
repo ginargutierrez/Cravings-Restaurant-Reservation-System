@@ -77,14 +77,14 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void label29_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

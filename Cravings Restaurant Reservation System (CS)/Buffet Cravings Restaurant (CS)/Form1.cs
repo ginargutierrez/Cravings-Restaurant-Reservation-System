@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public static string reservedDate;
         public static string reservedMeal;
         public static string reservedTable;
+        public string table;
         public bool reserve1 = false;
         public bool reserve2 = false;
         public bool reserve3 = false;
@@ -579,50 +580,62 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             if (reserve1 == true){
-                button2.Text = "S1";
+                table = "S1";
             }else if (reserve2 == true){
-                button2.Text = "S2";
+                table = "S2";
             }else if (reserve3 == true){
-                button2.Text = "S3";
+                table = "S3";
             }else if (reserve4 == true){
-                button2.Text = "S4";
+                table = "S4";
             }else if (reserve5 == true){
-                button2.Text = "F1";
+                table = "F1";
             }else if (reserve6 == true){
-                button2.Text = "F2";
+                table = "F2";
             }else if (reserve7 == true){
-                button2.Text = "T1";
+                table = "T1";
             }else if (reserve8 == true){
-                button2.Text = "T2";
+                table = "T2";
             }else if (reserve9 == true){
-                button2.Text = "Q1";
+                table = "Q1";
             }else if (reserve10 == true){
-                button2.Text = "Q2";
+                table = "Q2";
             }else if (reserve11 == true){
-                button2.Text = "Q3";
+                table = "Q3";
             }else if (reserve12 == true){
-                button2.Text = "Q4";
+                table = "Q4";
             }else if (reserve13 == true){
-                button2.Text = "D1";
+                table = "D1";
             }else if (reserve14 == true){
-                button2.Text = "D2";
+                table = "D2";
             }else if (reserve15 == true){
-                button2.Text = "D3";
+                table = "D3";
             }else if (reserve16 == true){
-                button2.Text = "D4";
+                table = "D4";
             }else if (reserve17 == true){
-                button2.Text = "D5";
+                table = "D5";
             }else if (reserve18 == true){
-                button2.Text = "D6";
+                table = "D6";
+            }
+            else if (reserve1 == false || reserve2 == false || reserve3 == false || reserve4 == false || reserve5 == false || reserve6 == false || reserve7 == false
+                  || reserve8 == false || reserve9 == false || reserve10 == false || reserve11 == false || reserve12 == false || reserve13 == false || reserve14 == false
+                  || reserve15 == false || reserve16 == false || reserve17 == false || reserve18 == false)
+            {
+                table = "";
             }
 
             reservedMeal = comboBox1.Text;
             reservedDate = monthCalendar1.Text;
-            reservedTable = button2.Text;
+            reservedTable = table;
 
-            Form2 form2 = new Form2();
-            form2.Show();
-            Visible = false;
+            if (reservedDate == "" || reservedMeal == "" || reservedTable == "")
+            {
+                MessageBox.Show("The date, meal or table is not yet complete. All fields are required!");
+            }
+            else
+            {   Form2 form2 = new Form2();
+                form2.Show();
+                Visible = false;
+            }
         }
 
 

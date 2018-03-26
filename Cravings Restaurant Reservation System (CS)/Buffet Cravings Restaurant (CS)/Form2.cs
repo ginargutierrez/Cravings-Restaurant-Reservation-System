@@ -70,7 +70,7 @@ namespace WindowsFormsApplication1
         {
             lastNameTextBox.MaxLength = 15;
 
-            if (!(System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "^[a-zA-Z]+$")))
+            if (!(System.Text.RegularExpressions.Regex.IsMatch(lastNameTextBox.Text, "^[a-z A-Z]+$")))
             {
                 if (!(lastNameTextBox.TextLength == 0))
                 {
@@ -84,7 +84,7 @@ namespace WindowsFormsApplication1
         private void firstNameTextBox_TextChanged(object sender, EventArgs e)
         {
             firstNameTextBox.MaxLength = 10;
-            if (!(System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "^[a-zA-Z]+$")))
+            if (!(System.Text.RegularExpressions.Regex.IsMatch(firstNameTextBox.Text, "^[a-z A-Z]+$")))
            { 
                 if (!(firstNameTextBox.TextLength == 0))
                 { 
@@ -97,7 +97,7 @@ namespace WindowsFormsApplication1
         private void middleNameTextBox_TextChanged(object sender, EventArgs e)
         {
             middleNameTextBox.MaxLength = 10;
-            if (!(System.Text.RegularExpressions.Regex.IsMatch(middleNameTextBox.Text, "^[a-zA-Z]+$")))
+            if (!(System.Text.RegularExpressions.Regex.IsMatch(middleNameTextBox.Text, "^[a-z A-Z]+$")))
             {
                 if (!(middleNameTextBox.TextLength == 0))
                 {
@@ -210,9 +210,8 @@ namespace WindowsFormsApplication1
             middleNameTextBox.Text = null;
             addressTextBox.Text = null;
             contactNoTextBox.Text = null;
-            typeOfMealComboBox.SelectedIndex = -1;
             noOfPeopleNumericUpDown.Value = 0;
-            tableNoTextBox.Text = null; 
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -259,6 +258,21 @@ namespace WindowsFormsApplication1
             Form3 form3 = new Form3();
             form3.Show();
             Visible = false;
+        }
+
+        private void typeOfMealComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
