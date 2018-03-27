@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         public static string Address;
         public static string ContactNo;
         public static string Date;
-        public static string NoOfPeople;
+        public static int NoOfPeople;
         public static string TableNo;
         public static string TypeOfMeal;
         public static string Confirmation;
@@ -58,7 +58,7 @@ namespace WindowsFormsApplication1
             addressTextBox.Text = Form3.Address1;
             contactNoTextBox.Text = Form3.ContactNo1;
             dateDateTimePicker.Text = Form3.Date1;
-            noOfPeopleNumericUpDown.Text = Form3.NoOfPeople1;
+            noOfPeopleNumericUpDown.Value = Form3.NoOfPeople1;
             tableNoTextBox.Text = Form3.TableNo1;
             typeOfMealComboBox.Text = Form3.TypeOfMeal1;
 
@@ -142,10 +142,8 @@ namespace WindowsFormsApplication1
 
         private void noOfPeopleNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            NoOfPeople = noOfPeopleNumericUpDown.Text;
+            NoOfPeople = (noOfPeopleNumericUpDown.Value != null) ? Convert.ToInt32(noOfPeopleNumericUpDown.Value) : 0;
         }
-
-        
 
         private void Home2_Click(object sender, EventArgs e)
         {
@@ -188,9 +186,20 @@ namespace WindowsFormsApplication1
 
         private void btnRecords2_Click(object sender, EventArgs e)
         {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
+            if (!(typeOfMealComboBox.Text == "" || dateDateTimePicker.Text == "" || typeOfMealComboBox.Text == ""))
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Form4 myForm4 = new Form4();
+                    myForm4.Show();
+                    this.Visible = false;
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -202,11 +211,11 @@ namespace WindowsFormsApplication1
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            lastNameTextBox.Text = null;
-            firstNameTextBox.Text = null;
-            middleNameTextBox.Text = null;
-            addressTextBox.Text = null;
-            contactNoTextBox.Text = null;
+            lastNameTextBox.Text = "";
+            firstNameTextBox.Text = "";
+            middleNameTextBox.Text = "";
+            addressTextBox.Text = "";
+            contactNoTextBox.Text = "";
             noOfPeopleNumericUpDown.Value = 0;
             
         }
@@ -248,13 +257,20 @@ namespace WindowsFormsApplication1
             Address = addressTextBox.Text;
             ContactNo = contactNoTextBox.Text;
             Date = dateDateTimePicker.Text;
-            NoOfPeople = noOfPeopleNumericUpDown.Text;
+            NoOfPeople = (noOfPeopleNumericUpDown.Value != null) ? Convert.ToInt32(noOfPeopleNumericUpDown.Value) : 0;
             TableNo = tableNoTextBox.Text;
             TypeOfMeal = typeOfMealComboBox.Text;
 
-            Form3 form3 = new Form3();
-            form3.Show();
-            Visible = false;
+            if (LastName == "" || FirstName == "" || MiddleName == "" || Address == "" || ContactNo == "" || NoOfPeople == 0)
+            {
+                DialogResult d = MessageBox.Show("All fields are required!\n" + "Please complete the form.", "Attention!");
+            }
+            else
+            {
+                Form3 form3 = new Form3();
+                form3.Show();
+                Visible = false;
+            }
         }
 
         private void typeOfMealComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -265,6 +281,16 @@ namespace WindowsFormsApplication1
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Confirmation = comboBox1.Text;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

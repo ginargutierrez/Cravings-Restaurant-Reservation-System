@@ -16,6 +16,8 @@ namespace WindowsFormsApplication1
         public static string reservedMeal;
         public static string reservedTable;
         public string table;
+        public bool yessy = false;
+        public bool calendar = false;
         public bool reserve1 = false;
         public bool reserve2 = false;
         public bool reserve3 = false;
@@ -63,14 +65,12 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-
         private void Records1_Click(object sender, EventArgs e)
         {
             var myForm4 = new Form4();
             myForm4.Show();
             Visible = false;
         }
-
 
         private void btnHome1_Click(object sender, EventArgs e)
         {
@@ -84,6 +84,7 @@ namespace WindowsFormsApplication1
             var myForm2 = new Form2();
             myForm2.Show();
             Visible = false;
+            DialogResult d = MessageBox.Show("The date, meal or table is not yet selected.\n" + " All fields are required!", "Attention!");
         }
 
         private void Home1_Click(object sender, EventArgs e)
@@ -109,9 +110,20 @@ namespace WindowsFormsApplication1
 
         private void btnRecords1_Click(object sender, EventArgs e)
         {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
+            if (!(reservedDate == "" || reservedMeal == "" || reservedTable == ""))
+            {
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Form4 myForm4 = new Form4();
+                    myForm4.Show();
+                    this.Visible = false;
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -135,14 +147,12 @@ namespace WindowsFormsApplication1
             pictureBox15.BackColor = Color.Transparent;
             pictureBox16.BackColor = Color.Transparent;
             pictureBox17.BackColor = Color.Transparent;
-            pictureBox18.BackColor = Color.Transparent;
-           
+            pictureBox18.BackColor = Color.Transparent;           
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             reserve2 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.LimeGreen;
             pictureBox3.BackColor = Color.Transparent;
@@ -166,7 +176,6 @@ namespace WindowsFormsApplication1
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             reserve3 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.LimeGreen;
@@ -190,7 +199,6 @@ namespace WindowsFormsApplication1
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             reserve4 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -214,7 +222,6 @@ namespace WindowsFormsApplication1
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             reserve5 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -238,7 +245,6 @@ namespace WindowsFormsApplication1
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             reserve6 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -262,7 +268,6 @@ namespace WindowsFormsApplication1
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             reserve7 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -286,7 +291,6 @@ namespace WindowsFormsApplication1
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             reserve8 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -310,7 +314,6 @@ namespace WindowsFormsApplication1
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             reserve9 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -334,7 +337,6 @@ namespace WindowsFormsApplication1
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             reserve10 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -358,7 +360,6 @@ namespace WindowsFormsApplication1
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             reserve11 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -382,7 +383,6 @@ namespace WindowsFormsApplication1
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             reserve12 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -406,7 +406,6 @@ namespace WindowsFormsApplication1
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             reserve13 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -430,7 +429,6 @@ namespace WindowsFormsApplication1
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             reserve14 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -454,7 +452,6 @@ namespace WindowsFormsApplication1
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             reserve15 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -478,7 +475,6 @@ namespace WindowsFormsApplication1
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             reserve16 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -502,7 +498,6 @@ namespace WindowsFormsApplication1
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             reserve17 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -526,7 +521,6 @@ namespace WindowsFormsApplication1
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             reserve18 = true;
-
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
@@ -574,6 +568,7 @@ namespace WindowsFormsApplication1
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
+            calendar = true;
             monthCalendar1.Text = monthCalendar1.SelectionRange.Start.ToShortDateString();
         }
 
@@ -623,13 +618,18 @@ namespace WindowsFormsApplication1
                 table = "";
             }
 
+            if (calendar == false)
+            {
+                monthCalendar1.Text = monthCalendar1.TodayDate.ToShortDateString();
+            }            
+
             reservedMeal = comboBox1.Text;
             reservedDate = monthCalendar1.Text;
             reservedTable = table;
 
             if (reservedDate == "" || reservedMeal == "" || reservedTable == "")
             {
-                MessageBox.Show("The date, meal or table is not yet complete. All fields are required!");
+                DialogResult d =  MessageBox.Show("The date, meal or table is not yet complete.\n"+" All fields are required!", "Attention!");
             }
             else
             {   Form2 form2 = new Form2();
@@ -637,7 +637,5 @@ namespace WindowsFormsApplication1
                 Visible = false;
             }
         }
-
-
-    }
+        }
 }

@@ -403,6 +403,7 @@
             // 
             this.Records1.AutoSize = true;
             this.Records1.BackColor = System.Drawing.Color.Wheat;
+            this.Records1.Enabled = false;
             this.Records1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Records1.Location = new System.Drawing.Point(502, 23);
             this.Records1.Name = "Records1";
@@ -414,6 +415,7 @@
             // 
             this.Reservation1.AutoSize = true;
             this.Reservation1.BackColor = System.Drawing.Color.Wheat;
+            this.Reservation1.Enabled = false;
             this.Reservation1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reservation1.Location = new System.Drawing.Point(348, 23);
             this.Reservation1.Name = "Reservation1";
@@ -425,6 +427,7 @@
             // 
             this.Create1.AutoSize = true;
             this.Create1.BackColor = System.Drawing.Color.Wheat;
+            this.Create1.Enabled = false;
             this.Create1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create1.Location = new System.Drawing.Point(224, 23);
             this.Create1.Name = "Create1";
@@ -437,6 +440,7 @@
             // 
             this.Home1.AutoSize = true;
             this.Home1.BackColor = System.Drawing.Color.SandyBrown;
+            this.Home1.Enabled = false;
             this.Home1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home1.Location = new System.Drawing.Point(81, 23);
             this.Home1.Name = "Home1";

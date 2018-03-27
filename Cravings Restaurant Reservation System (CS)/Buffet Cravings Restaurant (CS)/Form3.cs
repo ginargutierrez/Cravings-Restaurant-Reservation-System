@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
         public static string Address1;
         public static string ContactNo1;
         public static string Date1;
-        public static string NoOfPeople1;
+        public static int NoOfPeople1;
         public static string TableNo1;
         public static string TypeOfMeal1;
         public bool button2_Clicked = false;
@@ -65,7 +65,7 @@ namespace WindowsFormsApplication1
             addressLabel1.Text =  Form2.Address;
             contactNoLabel1.Text = Form2.ContactNo;
             dateLabel1.Text = Form2.Date;
-            noOfPeopleLabel1.Text = Form2.NoOfPeople;
+            int noOfPeopleLabel1 = Form2.NoOfPeople;
             tableNoLabel1.Text = Form2.TableNo;
             typeOfMealLabel1.Text = Form2.TypeOfMeal;
         }
@@ -129,9 +129,17 @@ namespace WindowsFormsApplication1
 
         private void btnHome3_Click(object sender, EventArgs e)
         {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Form1 myForm1 = new Form1();
+                myForm1.Show();
+                this.Visible = false;
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+
+            }
         }
 
         private void Create3_Click(object sender, EventArgs e)
@@ -139,6 +147,7 @@ namespace WindowsFormsApplication1
             var myForm2 = new Form2();
             myForm2.Show();
             Visible = false;
+            DialogResult d = MessageBox.Show("The page cannot be opened.\n" + "Complete the reservation first to proceed.", "Attention!");
         }
 
         private void btnCreate3_Click(object sender, EventArgs e)
@@ -164,9 +173,17 @@ namespace WindowsFormsApplication1
 
         private void Records3_Click(object sender, EventArgs e)
         {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Form4 myForm4 = new Form4();
+                myForm4.Show();
+                this.Visible = false;
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+
+            }
         }
 
         private void btnRecords3_Click(object sender, EventArgs e)
@@ -192,7 +209,7 @@ namespace WindowsFormsApplication1
             Address1 = null;
             ContactNo1 = null;
             TypeOfMeal1 = null;
-            NoOfPeople1 = null;
+            NoOfPeople1 = 0;
             TableNo1 = null;
 
             try
@@ -237,6 +254,9 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Error" + ex);
             }
 
+            var myForm4 = new Form4();
+            myForm4.Show();
+            Visible = false;
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
@@ -249,7 +269,7 @@ namespace WindowsFormsApplication1
                 Address1 = null;
                 ContactNo1 = null;
                 TypeOfMeal1 = null;
-                NoOfPeople1 = null;
+                NoOfPeople1 = 0;
                 TableNo1 = null;
             }
             else
@@ -260,7 +280,7 @@ namespace WindowsFormsApplication1
                 Address1 = addressLabel1.Text;
                 ContactNo1 = contactNoLabel1.Text;
                 Date1 = dateLabel1.Text;
-                NoOfPeople1 = noOfPeopleLabel1.Text;
+                NoOfPeople1 = (int) numericUpDown1.Value;
                 TableNo1 = tableNoLabel1.Text;
                 TypeOfMeal1 = typeOfMealLabel1.Text;
             }

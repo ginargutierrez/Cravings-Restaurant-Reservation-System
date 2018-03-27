@@ -324,7 +324,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource3, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(255, 152);
+            this.addressTextBox.Location = new System.Drawing.Point(255, 150);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(200, 20);
             this.addressTextBox.TabIndex = 29;
@@ -392,7 +392,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(187, 317);
+            this.label18.Location = new System.Drawing.Point(187, 325);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 15);
             this.label18.TabIndex = 24;
@@ -640,6 +640,7 @@
             // 
             this.Records2.AutoSize = true;
             this.Records2.BackColor = System.Drawing.Color.Wheat;
+            this.Records2.Enabled = false;
             this.Records2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Records2.Location = new System.Drawing.Point(500, 23);
             this.Records2.Name = "Records2";
@@ -652,6 +653,7 @@
             // 
             this.Reservation2.AutoSize = true;
             this.Reservation2.BackColor = System.Drawing.Color.Wheat;
+            this.Reservation2.Enabled = false;
             this.Reservation2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reservation2.Location = new System.Drawing.Point(348, 23);
             this.Reservation2.Name = "Reservation2";
@@ -664,6 +666,7 @@
             // 
             this.Create2.AutoSize = true;
             this.Create2.BackColor = System.Drawing.Color.SandyBrown;
+            this.Create2.Enabled = false;
             this.Create2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create2.Location = new System.Drawing.Point(224, 23);
             this.Create2.Name = "Create2";
@@ -675,6 +678,7 @@
             // 
             this.Home2.AutoSize = true;
             this.Home2.BackColor = System.Drawing.Color.Wheat;
+            this.Home2.Enabled = false;
             this.Home2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home2.Location = new System.Drawing.Point(81, 23);
             this.Home2.Name = "Home2";
@@ -709,6 +713,7 @@
             // 
             this.btnCreate2.BackColor = System.Drawing.Color.SandyBrown;
             this.btnCreate2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnCreate2.Enabled = false;
             this.btnCreate2.Location = new System.Drawing.Point(172, 12);
             this.btnCreate2.Name = "btnCreate2";
             this.btnCreate2.Size = new System.Drawing.Size(149, 39);
@@ -755,6 +760,7 @@
             this.label29.Size = new System.Drawing.Size(17, 24);
             this.label29.TabIndex = 9;
             this.label29.Text = "-";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // label5
             // 
@@ -766,6 +772,7 @@
             this.label5.Size = new System.Drawing.Size(20, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "X";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel23
             // 
