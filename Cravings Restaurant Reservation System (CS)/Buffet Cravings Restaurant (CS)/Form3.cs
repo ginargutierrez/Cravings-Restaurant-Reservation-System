@@ -6,12 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace WindowsFormsApplication1
 {
-   
+    
     public partial class Form3 : Form
-    { 
+    {
+        private OleDbConnection connection = new OleDbConnection();
+        
         public static string LastName1;
         public static string FirstName1;
         public static string MiddleName1;
@@ -26,6 +29,7 @@ namespace WindowsFormsApplication1
         public Form3()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\GinaG\\Documents\\CRRS\\Cravings Restaurant Reservation System (CS)\Reservation.accdb";
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -190,6 +194,49 @@ namespace WindowsFormsApplication1
             TypeOfMeal1 = null;
             NoOfPeople1 = null;
             TableNo1 = null;
+
+            try
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+
+                //command.CommandText = "INSERT INTO Reservation (TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo) VALUES (@transactionNo, @firstName, @lastName, @middleName, @contactNo, @address, @typeOfMeal, @datee, @noOfPeople, @tableNo)";
+
+                command.CommandText = "INSERT INTO Reservation (FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo, Confirmation) VALUES ('" + firstNameLabel1.Text + "','" + lastNameLabel1.Text + "','" + middleNameLabel1.Text + "','" + contactNoLabel1.Text + "','" + addressLabel1.Text + "','" + typeOfMealLabel1.Text + "','" + dateLabel1.Text + "','" + noOfPeopleLabel1.Text + "','" + tableNoLabel1.Text + "','" + Form2.Confirmation + "')";
+
+                //command.CommandText = "INSERT INTO Reservation (FirstName) VALUES ('  firstNameLabel1.Text  ')";
+                //command.CommandText = "INSERT INTO Reservation (LastName) VALUES ('   lastNameLabel1.Text   ')";
+                //command.CommandText = "INSERT INTO Reservation (MiddleName) VALUES ('middleNameLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (ContactNo) VALUES ('contactNoLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (Address) VALUES ('addressLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (Date) VALUES ('dateLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (NoOfPeople) VALUES ('noOfPeopleLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (TableNo) VALUES ('tableNoLabel1.Text')";
+                //command.CommandText = "INSERT INTO Reservation (TypeOfMeal) VALUES ('typeOfMealLabel1.Text')";
+
+
+                //command.Parameters.AddWithValue("@transactionNo", transactionNoLabel1);
+                //command.Parameters.AddWithValue("@firstName", firstNameLabel1);
+                //command.Parameters.AddWithValue("@lastName", lastNameLabel1);
+                //command.Parameters.AddWithValue("@middleName", middleNameLabel1);
+                //command.Parameters.AddWithValue("@contactNo", contactNoLabel1);
+                //command.Parameters.AddWithValue("@address", addressLabel1);
+                //command.Parameters.AddWithValue("@typerOfMeal", typeOfMealLabel1);
+                //command.Parameters.AddWithValue("@datee", dateLabel1);
+                //command.Parameters.AddWithValue("@noOfPeople", noOfPeopleLabel1);
+                //command.Parameters.AddWithValue("@tableNo", tableNoLabel1);
+
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+                MessageBox.Show("Saved");
+                command.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex);
+            }
+
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
@@ -223,14 +270,14 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void label29_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

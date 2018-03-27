@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
         public static string NoOfPeople;
         public static string TableNo;
         public static string TypeOfMeal;
+        public static string Confirmation;
 
         public Form2()
         {
@@ -160,10 +161,6 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-        private void Create2_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnCreate2_Click(object sender, EventArgs e)
         {
         }
@@ -265,14 +262,9 @@ namespace WindowsFormsApplication1
             
         }
 
-        private void label29_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            Confirmation = comboBox1.Text;
         }
     }
 }

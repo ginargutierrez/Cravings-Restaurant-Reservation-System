@@ -62,6 +62,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ContactNo.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataGrid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataGrid.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Date.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +178,17 @@
     <None Include="ContactNo.xss">
       <DependentUpon>ContactNo.xsd</DependentUpon>
     </None>
+    <None Include="DataGrid.xsc">
+      <DependentUpon>DataGrid.xsd</DependentUpon>
+    </None>
+    <None Include="DataGrid.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataGrid.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataGrid.xss">
+      <DependentUpon>DataGrid.xsd</DependentUpon>
+    </None>
     <None Include="Date.xsc">
       <DependentUpon>Date.xsd</DependentUpon>
     </None>
@@ -276,6 +292,9 @@
     <None Include="icon.png" />
     <None Include="images-6.jpg" />
     <None Include="images-7.jpg" />
+    <Content Include="Reservation.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="reservation.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

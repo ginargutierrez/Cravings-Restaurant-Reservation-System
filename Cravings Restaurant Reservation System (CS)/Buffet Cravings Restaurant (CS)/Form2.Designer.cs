@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tableNoTextBox = new System.Windows.Forms.TextBox();
             this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lastName = new WindowsFormsApplication1.LastName();
@@ -101,13 +103,11 @@
             this.btnHome2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape71 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastName)).BeginInit();
@@ -142,6 +142,8 @@
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.tableNoTextBox);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.btnBack);
@@ -171,11 +173,34 @@
             this.panel3.TabIndex = 5;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.comboBox1.Location = new System.Drawing.Point(255, 344);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(51, 21);
+            this.comboBox1.TabIndex = 40;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(165, 347);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 15);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Confirmation:";
+            // 
             // tableNoTextBox
             // 
             this.tableNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource, "LastName", true));
             this.tableNoTextBox.Enabled = false;
-            this.tableNoTextBox.Location = new System.Drawing.Point(255, 323);
+            this.tableNoTextBox.Location = new System.Drawing.Point(255, 315);
             this.tableNoTextBox.Name = "tableNoTextBox";
             this.tableNoTextBox.Size = new System.Drawing.Size(51, 20);
             this.tableNoTextBox.TabIndex = 38;
@@ -367,7 +392,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(187, 325);
+            this.label18.Location = new System.Drawing.Point(187, 317);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 15);
             this.label18.TabIndex = 24;
@@ -616,7 +641,7 @@
             this.Records2.AutoSize = true;
             this.Records2.BackColor = System.Drawing.Color.Wheat;
             this.Records2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Records2.Location = new System.Drawing.Point(502, 23);
+            this.Records2.Location = new System.Drawing.Point(500, 23);
             this.Records2.Name = "Records2";
             this.Records2.Size = new System.Drawing.Size(53, 18);
             this.Records2.TabIndex = 7;
@@ -645,7 +670,6 @@
             this.Create2.Size = new System.Drawing.Size(50, 18);
             this.Create2.TabIndex = 5;
             this.Create2.Text = "Create";
-            this.Create2.Click += new System.EventHandler(this.Create2_Click);
             // 
             // Home2
             // 
@@ -710,41 +734,38 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.shapeContainer1);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 8;
+            this.panel1.TabIndex = 6;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(584, 0);
+            this.label29.Location = new System.Drawing.Point(589, -3);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 7;
+            this.label29.TabIndex = 9;
             this.label29.Text = "-";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(606, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(611, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 19);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "X";
             // 
             // panel23
             // 
@@ -774,32 +795,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(251, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 22);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Cravings Restaurant";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape71});
-            this.shapeContainer1.Size = new System.Drawing.Size(634, 82);
-            this.shapeContainer1.TabIndex = 5;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape71
-            // 
-            this.rectangleShape71.Location = new System.Drawing.Point(308, 33);
-            this.rectangleShape71.Name = "rectangleShape71";
-            this.rectangleShape71.Size = new System.Drawing.Size(19, 16);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(251, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cravings Restaurant";
             // 
             // Form2
             // 
@@ -807,8 +811,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(664, 621);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -916,17 +920,17 @@
         private System.Windows.Forms.PictureBox btnReservation2;
         private System.Windows.Forms.PictureBox btnCreate2;
         private System.Windows.Forms.PictureBox btnHome2;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tableNoTextBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tableNoTextBox;
+        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label5;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape71;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

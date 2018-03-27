@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.panel2 = new System.Windows.Forms.Panel();
             this.Records4 = new System.Windows.Forms.Label();
@@ -40,16 +41,30 @@
             this.btnHome4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.transactionNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeOfMealDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.confirmationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.reservationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGrid = new WindowsFormsApplication1.DataGrid();
             this.label8 = new System.Windows.Forms.Label();
+            this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape71 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.label1 = new System.Windows.Forms.Label();
+            this.reservationTableAdapter = new WindowsFormsApplication1.DataGridTableAdapters.ReservationTableAdapter();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReservation4)).BeginInit();
@@ -57,6 +72,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnHome4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,22 +202,129 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 66);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.transactionNoDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.middleNameDataGridViewTextBoxColumn,
+            this.contactNoDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.typeOfMealDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn,
+            this.noOfPeopleDataGridViewTextBoxColumn,
+            this.tableNoDataGridViewTextBoxColumn,
+            this.confirmationDataGridViewTextBoxColumn,
+            this.Update});
+            this.dataGridView1.DataSource = this.reservationBindingSource1;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView1.Location = new System.Drawing.Point(29, 46);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(573, 334);
-            this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.Size = new System.Drawing.Size(573, 367);
+            this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // transactionNoDataGridViewTextBoxColumn
+            // 
+            this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
+            this.transactionNoDataGridViewTextBoxColumn.HeaderText = "TransactionNo";
+            this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            // 
+            // contactNoDataGridViewTextBoxColumn
+            // 
+            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
+            this.contactNoDataGridViewTextBoxColumn.HeaderText = "ContactNo";
+            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // typeOfMealDataGridViewTextBoxColumn
+            // 
+            this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
+            this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "TypeOfMeal";
+            this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // noOfPeopleDataGridViewTextBoxColumn
+            // 
+            this.noOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NoOfPeople";
+            this.noOfPeopleDataGridViewTextBoxColumn.HeaderText = "NoOfPeople";
+            this.noOfPeopleDataGridViewTextBoxColumn.Name = "noOfPeopleDataGridViewTextBoxColumn";
+            // 
+            // tableNoDataGridViewTextBoxColumn
+            // 
+            this.tableNoDataGridViewTextBoxColumn.DataPropertyName = "TableNo";
+            this.tableNoDataGridViewTextBoxColumn.HeaderText = "TableNo";
+            this.tableNoDataGridViewTextBoxColumn.Name = "tableNoDataGridViewTextBoxColumn";
+            // 
+            // confirmationDataGridViewTextBoxColumn
+            // 
+            this.confirmationDataGridViewTextBoxColumn.DataPropertyName = "Confirmation";
+            this.confirmationDataGridViewTextBoxColumn.HeaderText = "Confirmation";
+            this.confirmationDataGridViewTextBoxColumn.Name = "confirmationDataGridViewTextBoxColumn";
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            this.Update.HeaderText = "Update";
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.ToolTipText = "Update";
+            // 
+            // reservationBindingSource1
+            // 
+            this.reservationBindingSource1.DataMember = "Reservation";
+            this.reservationBindingSource1.DataSource = this.dataGrid;
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.DataSetName = "DataGrid";
+            this.dataGrid.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 26);
+            this.label8.Location = new System.Drawing.Point(26, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(162, 15);
             this.label8.TabIndex = 6;
             this.label8.Text = "RECORDS OF RESERVATION";
+            // 
+            // reservationBindingSource
+            // 
+            this.reservationBindingSource.DataMember = "Reservation";
+            this.reservationBindingSource.DataSource = this.dataGrid;
             // 
             // panel1
             // 
@@ -208,41 +333,40 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.shapeContainer1);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(14, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 42;
+            this.panel1.TabIndex = 40;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(584, 0);
+            this.label29.Location = new System.Drawing.Point(584, 7);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 7;
+            this.label29.TabIndex = 43;
             this.label29.Text = "-";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // label1
+            // label16
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(606, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 19);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(606, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(20, 19);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "X";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel23
             // 
@@ -272,32 +396,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(251, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 22);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Cravings Restaurant";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(251, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cravings Restaurant";
             // 
-            // shapeContainer1
+            // reservationTableAdapter
             // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape71});
-            this.shapeContainer1.Size = new System.Drawing.Size(634, 82);
-            this.shapeContainer1.TabIndex = 5;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape71
-            // 
-            this.rectangleShape71.Location = new System.Drawing.Point(308, 33);
-            this.rectangleShape71.Name = "rectangleShape71";
-            this.rectangleShape71.Size = new System.Drawing.Size(19, 16);
+            this.reservationTableAdapter.ClearBeforeFill = true;
             // 
             // Form4
             // 
@@ -306,13 +417,14 @@
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.images_7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 621);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Records";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).EndInit();
@@ -322,6 +434,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -341,16 +456,29 @@
         private System.Windows.Forms.PictureBox btnHome4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape71;
-
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label16;
+        private DataGrid dataGrid;
+        private System.Windows.Forms.BindingSource reservationBindingSource;
+        private DataGridTableAdapters.ReservationTableAdapter reservationTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource reservationBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn transactionNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn middleNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contactNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeOfMealDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noOfPeopleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tableNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn confirmationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
     }
 }
