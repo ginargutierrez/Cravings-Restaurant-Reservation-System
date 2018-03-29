@@ -198,6 +198,9 @@ rcf/
 # Windows Store app package directories and files
 AppPackages/
 BundleArtifacts/
+bin/
+obj/
+
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
@@ -316,6 +319,8 @@ OpenCover/
 
 # Azure Stream Analytics local run output 
 ASALocalRun/
+Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\bin\
+Cravings Restaurant Reservation System (CS)\Buffet Cravings Restaurant (CS)\obj\
 
 # MSBuild Binary and Structured Log
 *.binlog
