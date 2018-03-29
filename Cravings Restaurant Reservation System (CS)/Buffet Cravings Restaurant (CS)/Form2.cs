@@ -142,7 +142,7 @@ namespace WindowsFormsApplication1
 
         private void noOfPeopleNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            NoOfPeople = (noOfPeopleNumericUpDown.Value != null) ? Convert.ToInt32(noOfPeopleNumericUpDown.Value) : 0;
+            NoOfPeople = Convert.ToInt32(noOfPeopleNumericUpDown.Value);
         }
 
         private void Home2_Click(object sender, EventArgs e)
@@ -257,7 +257,7 @@ namespace WindowsFormsApplication1
             Address = addressTextBox.Text;
             ContactNo = contactNoTextBox.Text;
             Date = dateDateTimePicker.Text;
-            NoOfPeople = (noOfPeopleNumericUpDown.Value != null) ? Convert.ToInt32(noOfPeopleNumericUpDown.Value) : 0;
+            NoOfPeople = Convert.ToInt32(noOfPeopleNumericUpDown.Value);
             TableNo = tableNoTextBox.Text;
             TypeOfMeal = typeOfMealComboBox.Text;
 

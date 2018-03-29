@@ -13,7 +13,6 @@ namespace WindowsFormsApplication1
     public partial class Form4 : Form
     {
         private OleDbConnection connection = new OleDbConnection();
-        OleDbDataAdapter adapter;
         DataTable dt = new DataTable();
 
         public static string LastName1;
