@@ -50,8 +50,6 @@ namespace WindowsFormsApplication1
             // TODO: This line of code loads data into the 'lastName.Reservation' table. You can move, or remove it, as needed.
             this.reservationTableAdapter.Fill(this.lastName.Reservation);
 
-           
-
             lastNameTextBox.Text = Form3.LastName1;
             firstNameTextBox.Text = Form3.FirstName1;
             middleNameTextBox.Text = Form3.MiddleName1;
@@ -78,7 +76,6 @@ namespace WindowsFormsApplication1
                     lastNameTextBox.Text = lastNameTextBox.Text.Remove(lastNameTextBox.Text.Length - 1);
                     lastNameTextBox.SelectionStart = lastNameTextBox.Text.Length + 1;
                 }
-
             }
         }
 
@@ -123,10 +120,8 @@ namespace WindowsFormsApplication1
                 if (!(contactNoTextBox.TextLength == 0))
                 {
                     contactNoTextBox.Text = contactNoTextBox.Text.Remove(contactNoTextBox.Text.Length - 1);
-                    contactNoTextBox.SelectionStart = contactNoTextBox.Text.Length + 1;
-                   
+                    contactNoTextBox.SelectionStart = contactNoTextBox.Text.Length + 1;                   
                 }
-
             }
         }
 
@@ -216,8 +211,7 @@ namespace WindowsFormsApplication1
             middleNameTextBox.Text = "";
             addressTextBox.Text = "";
             contactNoTextBox.Text = "";
-            noOfPeopleNumericUpDown.Value = 0;
-            
+            noOfPeopleNumericUpDown.Value = 0;            
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -61,8 +61,6 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeOfMealDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Cancel = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
@@ -215,8 +213,6 @@
             this.addressDataGridViewTextBoxColumn,
             this.typeOfMealDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
-            this.noOfPeopleDataGridViewTextBoxColumn,
-            this.tableNoDataGridViewTextBoxColumn,
             this.Update,
             this.Cancel});
             this.dataGridView1.DataSource = this.reservationBindingSource1;
@@ -393,20 +389,6 @@
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // noOfPeopleDataGridViewTextBoxColumn
-            // 
-            this.noOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NoOfPeople";
-            this.noOfPeopleDataGridViewTextBoxColumn.HeaderText = "Companions";
-            this.noOfPeopleDataGridViewTextBoxColumn.Name = "noOfPeopleDataGridViewTextBoxColumn";
-            this.noOfPeopleDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tableNoDataGridViewTextBoxColumn
-            // 
-            this.tableNoDataGridViewTextBoxColumn.DataPropertyName = "TableNo";
-            this.tableNoDataGridViewTextBoxColumn.HeaderText = "Table No.";
-            this.tableNoDataGridViewTextBoxColumn.Name = "tableNoDataGridViewTextBoxColumn";
-            this.tableNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // Update
             // 
             this.Update.DataPropertyName = "Update";
@@ -488,8 +470,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeOfMealDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noOfPeopleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tableNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewButtonColumn Cancel;
     }

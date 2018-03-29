@@ -214,9 +214,9 @@ namespace WindowsFormsApplication1
 
             try
             {
-                connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
+                command.Connection.Open();
 
                 command.CommandText = "INSERT INTO Reservation (FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo, AvailabilityFlg) VALUES ('" + firstNameLabel1.Text + "','" + lastNameLabel1.Text + "','" + middleNameLabel1.Text + "','" + contactNoLabel1.Text + "','" + addressLabel1.Text + "','" + typeOfMealLabel1.Text + "','" + dateLabel1.Text + "','" + noOfPeopleLabel1.Text + "','" + tableNoLabel1.Text + "','" + 1 + "')";
                 

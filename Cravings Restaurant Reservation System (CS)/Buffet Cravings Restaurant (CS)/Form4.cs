@@ -117,7 +117,7 @@ namespace WindowsFormsApplication1
         private void Form4_Load(object sender, EventArgs e)
         {
             //Use a variable to hold the SQL statement.
-            string query = "SELECT TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, Date, Companions, TableNo FROM Reservation";
+            string query = "SELECT TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, Date FROM Reservation";
 
             try
             {
@@ -132,6 +132,7 @@ namespace WindowsFormsApplication1
                 }
             }catch(Exception ex)
             {
+                MessageBox.Show("Error" + ex);
             }
         }
 
