@@ -72,16 +72,8 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-        private void btnCreate1_Click(object sender, EventArgs e)
-        {
-            var myForm5 = new Form5();
-            myForm5.Show();
-        }
-
         private void btnReservation1_Click(object sender, EventArgs e)
         {
-            var myForm5 = new Form5();
-            myForm5.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -591,7 +583,234 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("The date, meal or table is not yet complete. All fields are required!");
             }
             else
-            {   Form2 form2 = new Form2();
+            {   
+                Form2 form2 = new Form2();
+                form2.Show();
+                Visible = false;
+            }
+        }
+
+        private void btnHome1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            Visible = false;
+        }
+
+        private void Home1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            Visible = false;
+        }
+
+        private void btnCreate1_Click(object sender, EventArgs e)
+        {
+            if (reserve1 == true)
+            {
+                table = "S1";
+
+                rectangleShape121.BackColor = Color.Transparent;
+            }
+            else if (reserve2 == true)
+            {
+                table = "S2";
+            }
+            else if (reserve3 == true)
+            {
+                table = "S3";
+            }
+            else if (reserve4 == true)
+            {
+                table = "S4";
+            }
+            else if (reserve5 == true)
+            {
+                table = "F1";
+            }
+            else if (reserve6 == true)
+            {
+                table = "F2";
+            }
+            else if (reserve7 == true)
+            {
+                table = "T1";
+            }
+            else if (reserve8 == true)
+            {
+                table = "T2";
+            }
+            else if (reserve9 == true)
+            {
+                table = "Q1";
+            }
+            else if (reserve10 == true)
+            {
+                table = "Q2";
+            }
+            else if (reserve11 == true)
+            {
+                table = "Q3";
+            }
+            else if (reserve12 == true)
+            {
+                table = "Q4";
+            }
+            else if (reserve13 == true)
+            {
+                table = "D1";
+            }
+            else if (reserve14 == true)
+            {
+                table = "D2";
+            }
+            else if (reserve15 == true)
+            {
+                table = "D3";
+            }
+            else if (reserve16 == true)
+            {
+                table = "D4";
+            }
+            else if (reserve17 == true)
+            {
+                table = "D5";
+            }
+            else if (reserve18 == true)
+            {
+                table = "D6";
+            }
+            else if (reserve1 == false || reserve2 == false || reserve3 == false || reserve4 == false || reserve5 == false || reserve6 == false || reserve7 == false
+                  || reserve8 == false || reserve9 == false || reserve10 == false || reserve11 == false || reserve12 == false || reserve13 == false || reserve14 == false
+                  || reserve15 == false || reserve16 == false || reserve17 == false || reserve18 == false)
+            {
+                table = "";
+            }
+
+            if (calendar == false)
+            {
+                monthCalendar1.Text = monthCalendar1.TodayDate.ToShortDateString();
+
+            }
+
+
+            reservedMeal = comboBox1.Text;
+            reservedDate = monthCalendar1.Text;
+            reservedTable = table;
+
+            if (reservedDate == "" || reservedMeal == "" || reservedTable == "")
+            {
+                MessageBox.Show("The date, meal or table is not yet complete. All fields are required!");
+            }
+            else
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+                Visible = false;
+            }
+        }
+
+        private void Create1_Click_1(object sender, EventArgs e)
+        {
+            if (reserve1 == true)
+            {
+                table = "S1";
+
+                rectangleShape121.BackColor = Color.Transparent;
+            }
+            else if (reserve2 == true)
+            {
+                table = "S2";
+            }
+            else if (reserve3 == true)
+            {
+                table = "S3";
+            }
+            else if (reserve4 == true)
+            {
+                table = "S4";
+            }
+            else if (reserve5 == true)
+            {
+                table = "F1";
+            }
+            else if (reserve6 == true)
+            {
+                table = "F2";
+            }
+            else if (reserve7 == true)
+            {
+                table = "T1";
+            }
+            else if (reserve8 == true)
+            {
+                table = "T2";
+            }
+            else if (reserve9 == true)
+            {
+                table = "Q1";
+            }
+            else if (reserve10 == true)
+            {
+                table = "Q2";
+            }
+            else if (reserve11 == true)
+            {
+                table = "Q3";
+            }
+            else if (reserve12 == true)
+            {
+                table = "Q4";
+            }
+            else if (reserve13 == true)
+            {
+                table = "D1";
+            }
+            else if (reserve14 == true)
+            {
+                table = "D2";
+            }
+            else if (reserve15 == true)
+            {
+                table = "D3";
+            }
+            else if (reserve16 == true)
+            {
+                table = "D4";
+            }
+            else if (reserve17 == true)
+            {
+                table = "D5";
+            }
+            else if (reserve18 == true)
+            {
+                table = "D6";
+            }
+            else if (reserve1 == false || reserve2 == false || reserve3 == false || reserve4 == false || reserve5 == false || reserve6 == false || reserve7 == false
+                  || reserve8 == false || reserve9 == false || reserve10 == false || reserve11 == false || reserve12 == false || reserve13 == false || reserve14 == false
+                  || reserve15 == false || reserve16 == false || reserve17 == false || reserve18 == false)
+            {
+                table = "";
+            }
+
+            if (calendar == false)
+            {
+                monthCalendar1.Text = monthCalendar1.TodayDate.ToShortDateString();
+
+            }
+
+
+            reservedMeal = comboBox1.Text;
+            reservedDate = monthCalendar1.Text;
+            reservedTable = table;
+
+            if (reservedDate == "" || reservedMeal == "" || reservedTable == "")
+            {
+                MessageBox.Show("The date, meal or table is not yet complete. All fields are required!");
+            }
+            else
+            {
+                Form2 form2 = new Form2();
                 form2.Show();
                 Visible = false;
             }
@@ -599,23 +818,33 @@ namespace WindowsFormsApplication1
 
         private void btnRecords1_Click(object sender, EventArgs e)
         {
-            if (!(reservedDate == "" || reservedMeal == "" || reservedTable == ""))
+            if (reservedDate == "" || reservedMeal == "" || reservedTable == "")
             {
-                Form6 myForm6 = new Form6();
-                myForm6.Show();
-                if (myForm6.yes == true)
-                {
-                    this.Visible = false;
-                    return;
-                }
+                MessageBox.Show("Do you really want to proceed? Your reservation will not be saved.");
+            }
+            else
+            {
+                Form4 form4 = new Form4();
+                form4.Show();
                 Visible = false;
-               
+            }
+        }
+
+        private void Records1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Do you really want to proceed? Your data will be lost.", "Wait a second...", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                Form4 form4 = new Form4();
+                form4.Show();
+                Visible = false;
+            }
+            else if (dialogResult == DialogResult.No)
+            {
 
             }
         }
 
-      
-        
 
     }
 }

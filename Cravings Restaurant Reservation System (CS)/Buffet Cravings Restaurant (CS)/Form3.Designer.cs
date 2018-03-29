@@ -41,8 +41,6 @@
             this.reservationBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.tableNo = new WindowsFormsApplication1.TableNo();
             this.noOfPeopleLabel1 = new System.Windows.Forms.Label();
-            this.reservationBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.noOfPeople = new WindowsFormsApplication1.NoOfPeople();
             this.dateLabel1 = new System.Windows.Forms.Label();
             this.reservationBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.date = new WindowsFormsApplication1.Date();

@@ -41,18 +41,6 @@
             this.btnHome4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.transactionNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeOfMealDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.confirmationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.reservationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGrid = new WindowsFormsApplication1.DataGrid();
             this.label8 = new System.Windows.Forms.Label();
@@ -65,6 +53,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.reservationTableAdapter = new WindowsFormsApplication1.DataGridTableAdapters.ReservationTableAdapter();
+            this.transactionNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeOfMealDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.confirmationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Cancel = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReservation4)).BeginInit();
@@ -202,7 +203,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -217,7 +217,8 @@
             this.noOfPeopleDataGridViewTextBoxColumn,
             this.tableNoDataGridViewTextBoxColumn,
             this.confirmationDataGridViewTextBoxColumn,
-            this.Update});
+            this.Update,
+            this.Cancel});
             this.dataGridView1.DataSource = this.reservationBindingSource1;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(29, 46);
@@ -225,80 +226,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(573, 367);
             this.dataGridView1.TabIndex = 61;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // transactionNoDataGridViewTextBoxColumn
-            // 
-            this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
-            this.transactionNoDataGridViewTextBoxColumn.HeaderText = "TransactionNo";
-            this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // middleNameDataGridViewTextBoxColumn
-            // 
-            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
-            this.middleNameDataGridViewTextBoxColumn.HeaderText = "MiddleName";
-            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
-            // 
-            // contactNoDataGridViewTextBoxColumn
-            // 
-            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
-            this.contactNoDataGridViewTextBoxColumn.HeaderText = "ContactNo";
-            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // typeOfMealDataGridViewTextBoxColumn
-            // 
-            this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
-            this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "TypeOfMeal";
-            this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // noOfPeopleDataGridViewTextBoxColumn
-            // 
-            this.noOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NoOfPeople";
-            this.noOfPeopleDataGridViewTextBoxColumn.HeaderText = "NoOfPeople";
-            this.noOfPeopleDataGridViewTextBoxColumn.Name = "noOfPeopleDataGridViewTextBoxColumn";
-            // 
-            // tableNoDataGridViewTextBoxColumn
-            // 
-            this.tableNoDataGridViewTextBoxColumn.DataPropertyName = "TableNo";
-            this.tableNoDataGridViewTextBoxColumn.HeaderText = "TableNo";
-            this.tableNoDataGridViewTextBoxColumn.Name = "tableNoDataGridViewTextBoxColumn";
-            // 
-            // confirmationDataGridViewTextBoxColumn
-            // 
-            this.confirmationDataGridViewTextBoxColumn.DataPropertyName = "Confirmation";
-            this.confirmationDataGridViewTextBoxColumn.HeaderText = "Confirmation";
-            this.confirmationDataGridViewTextBoxColumn.Name = "confirmationDataGridViewTextBoxColumn";
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            this.Update.HeaderText = "Update";
-            this.Update.Name = "Update";
-            this.Update.Text = "Update";
-            this.Update.ToolTipText = "Update";
             // 
             // reservationBindingSource1
             // 
@@ -410,6 +337,85 @@
             // 
             this.reservationTableAdapter.ClearBeforeFill = true;
             // 
+            // transactionNoDataGridViewTextBoxColumn
+            // 
+            this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
+            this.transactionNoDataGridViewTextBoxColumn.HeaderText = "Transaction No.";
+            this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
+            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            // 
+            // contactNoDataGridViewTextBoxColumn
+            // 
+            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
+            this.contactNoDataGridViewTextBoxColumn.HeaderText = "Contact No.";
+            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // typeOfMealDataGridViewTextBoxColumn
+            // 
+            this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
+            this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "Type of Meal";
+            this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            // 
+            // noOfPeopleDataGridViewTextBoxColumn
+            // 
+            this.noOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NoOfPeople";
+            this.noOfPeopleDataGridViewTextBoxColumn.HeaderText = "Companions";
+            this.noOfPeopleDataGridViewTextBoxColumn.Name = "noOfPeopleDataGridViewTextBoxColumn";
+            // 
+            // tableNoDataGridViewTextBoxColumn
+            // 
+            this.tableNoDataGridViewTextBoxColumn.DataPropertyName = "TableNo";
+            this.tableNoDataGridViewTextBoxColumn.HeaderText = "Table No.";
+            this.tableNoDataGridViewTextBoxColumn.Name = "tableNoDataGridViewTextBoxColumn";
+            // 
+            // confirmationDataGridViewTextBoxColumn
+            // 
+            this.confirmationDataGridViewTextBoxColumn.DataPropertyName = "Confirmation";
+            this.confirmationDataGridViewTextBoxColumn.HeaderText = "Confirmation";
+            this.confirmationDataGridViewTextBoxColumn.Name = "confirmationDataGridViewTextBoxColumn";
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            this.Update.HeaderText = "Done";
+            this.Update.Name = "Update";
+            this.Update.Text = "Done";
+            this.Update.ToolTipText = "Update";
+            // 
+            // Cancel
+            // 
+            this.Cancel.HeaderText = "Cancel";
+            this.Cancel.Name = "Cancel";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,5 +486,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tableNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn confirmationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.DataGridViewButtonColumn Cancel;
     }
 }
