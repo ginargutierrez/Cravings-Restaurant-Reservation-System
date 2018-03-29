@@ -63,7 +63,6 @@
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noOfPeopleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.confirmationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Cancel = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
@@ -203,6 +202,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -216,13 +217,13 @@
             this.dateDataGridViewTextBoxColumn,
             this.noOfPeopleDataGridViewTextBoxColumn,
             this.tableNoDataGridViewTextBoxColumn,
-            this.confirmationDataGridViewTextBoxColumn,
             this.Update,
             this.Cancel});
             this.dataGridView1.DataSource = this.reservationBindingSource1;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(29, 46);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(573, 367);
             this.dataGridView1.TabIndex = 61;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -234,7 +235,6 @@
             // 
             // dataGrid
             // 
-            this.dataGrid.DataSetName = "DataGrid";
             this.dataGrid.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label8
@@ -342,72 +342,77 @@
             this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
             this.transactionNoDataGridViewTextBoxColumn.HeaderText = "Transaction No.";
             this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
+            this.transactionNoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
             this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
             this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lastNameDataGridViewTextBoxColumn
             // 
             this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
             this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
             this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // middleNameDataGridViewTextBoxColumn
             // 
             this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
             this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
             this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // contactNoDataGridViewTextBoxColumn
             // 
             this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
             this.contactNoDataGridViewTextBoxColumn.HeaderText = "Contact No.";
             this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
+            this.contactNoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // typeOfMealDataGridViewTextBoxColumn
             // 
             this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
             this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "Type of Meal";
             this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
+            this.typeOfMealDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dateDataGridViewTextBoxColumn
             // 
             this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
             this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // noOfPeopleDataGridViewTextBoxColumn
             // 
             this.noOfPeopleDataGridViewTextBoxColumn.DataPropertyName = "NoOfPeople";
             this.noOfPeopleDataGridViewTextBoxColumn.HeaderText = "Companions";
             this.noOfPeopleDataGridViewTextBoxColumn.Name = "noOfPeopleDataGridViewTextBoxColumn";
+            this.noOfPeopleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tableNoDataGridViewTextBoxColumn
             // 
             this.tableNoDataGridViewTextBoxColumn.DataPropertyName = "TableNo";
             this.tableNoDataGridViewTextBoxColumn.HeaderText = "Table No.";
             this.tableNoDataGridViewTextBoxColumn.Name = "tableNoDataGridViewTextBoxColumn";
-            // 
-            // confirmationDataGridViewTextBoxColumn
-            // 
-            this.confirmationDataGridViewTextBoxColumn.DataPropertyName = "Confirmation";
-            this.confirmationDataGridViewTextBoxColumn.HeaderText = "Confirmation";
-            this.confirmationDataGridViewTextBoxColumn.Name = "confirmationDataGridViewTextBoxColumn";
+            this.tableNoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Update
             // 
             this.Update.DataPropertyName = "Update";
             this.Update.HeaderText = "Done";
             this.Update.Name = "Update";
+            this.Update.ReadOnly = true;
             this.Update.Text = "Done";
             this.Update.ToolTipText = "Update";
             // 
@@ -415,6 +420,7 @@
             // 
             this.Cancel.HeaderText = "Cancel";
             this.Cancel.Name = "Cancel";
+            this.Cancel.ReadOnly = true;
             // 
             // Form4
             // 
@@ -484,7 +490,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noOfPeopleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tableNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn confirmationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewButtonColumn Cancel;
     }

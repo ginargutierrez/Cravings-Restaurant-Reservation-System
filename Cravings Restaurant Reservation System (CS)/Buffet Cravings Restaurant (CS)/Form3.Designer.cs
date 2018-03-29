@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.reservationBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.noOfPeople = new WindowsFormsApplication1.NoOfPeople();
             this.transactionNoLabel1 = new System.Windows.Forms.Label();
@@ -112,15 +111,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noOfPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableNo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noOfPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.date)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource5)).BeginInit();
@@ -148,7 +144,6 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.numericUpDown1);
             this.panel3.Controls.Add(this.transactionNoLabel1);
             this.panel3.Controls.Add(this.tableNoLabel1);
             this.panel3.Controls.Add(this.noOfPeopleLabel1);
@@ -176,15 +171,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(636, 437);
             this.panel3.TabIndex = 24;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservationBindingSource7, "NoOfPeople", true));
-            this.numericUpDown1.Location = new System.Drawing.Point(253, 314);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.ReadOnly = true;
-            this.numericUpDown1.Size = new System.Drawing.Size(107, 20);
-            this.numericUpDown1.TabIndex = 37;
             // 
             // reservationBindingSource7
             // 
@@ -221,7 +207,7 @@
             this.tableNoLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource8, "TableNo", true));
             this.tableNoLabel1.Location = new System.Drawing.Point(253, 345);
             this.tableNoLabel1.Name = "tableNoLabel1";
-            this.tableNoLabel1.Size = new System.Drawing.Size(107, 23);
+            this.tableNoLabel1.Size = new System.Drawing.Size(200, 23);
             this.tableNoLabel1.TabIndex = 35;
             this.tableNoLabel1.Text = "label19";
             this.tableNoLabel1.Click += new System.EventHandler(this.tableNoLabel1_Click);
@@ -241,20 +227,10 @@
             this.noOfPeopleLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource7, "NoOfPeople", true));
             this.noOfPeopleLabel1.Location = new System.Drawing.Point(253, 311);
             this.noOfPeopleLabel1.Name = "noOfPeopleLabel1";
-            this.noOfPeopleLabel1.Size = new System.Drawing.Size(107, 23);
+            this.noOfPeopleLabel1.Size = new System.Drawing.Size(200, 23);
             this.noOfPeopleLabel1.TabIndex = 34;
             this.noOfPeopleLabel1.Text = "label19";
             this.noOfPeopleLabel1.Click += new System.EventHandler(this.noOfPeopleLabel1_Click);
-            // 
-            // reservationBindingSource7
-            // 
-            this.reservationBindingSource7.DataMember = "Reservation";
-            this.reservationBindingSource7.DataSource = this.noOfPeople;
-            // 
-            // noOfPeople
-            // 
-            this.noOfPeople.DataSetName = "NoOfPeople";
-            this.noOfPeople.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dateLabel1
             // 
@@ -722,8 +698,8 @@
             // btnReservation3
             // 
             this.btnReservation3.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnReservation3.Enabled = false;
             this.btnReservation3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnReservation3.Enabled = false;
             this.btnReservation3.Location = new System.Drawing.Point(316, 12);
             this.btnReservation3.Name = "btnReservation3";
             this.btnReservation3.Size = new System.Drawing.Size(149, 39);
@@ -849,15 +825,12 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noOfPeople)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableNo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noOfPeople)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.date)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource5)).EndInit();
@@ -966,6 +939,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

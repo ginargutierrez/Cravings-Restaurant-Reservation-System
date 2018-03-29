@@ -280,7 +280,6 @@ namespace WindowsFormsApplication1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Confirmation = comboBox1.Text;
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -116,9 +116,23 @@ namespace WindowsFormsApplication1
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataGrid.Reservation' table. You can move, or remove it, as needed.
-            this.reservationTableAdapter.Fill(this.dataGrid.Reservation);
+            //Use a variable to hold the SQL statement.
+            string query = "SELECT TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, Date, Companions, TableNo FROM Reservation";
 
+            try
+            {
+                using (OleDbConnection conn = new OleDbConnection(connection.ConnectionString))
+                {
+                    using (OleDbDataAdapter adapter = new OleDbDataAdapter(query, conn)) 
+                    {
+                        DataSet dataset = new DataSet();
+                        adapter.Fill(dataset);
+                        dataGridView1.DataSource = dataset.Tables[0];
+                    }
+                }
+            }catch(Exception ex)
+            {
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

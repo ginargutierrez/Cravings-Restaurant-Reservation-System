@@ -65,7 +65,7 @@ namespace WindowsFormsApplication1
             addressLabel1.Text =  Form2.Address;
             contactNoLabel1.Text = Form2.ContactNo;
             dateLabel1.Text = Form2.Date;
-            int noOfPeopleLabel1 = Form2.NoOfPeople;
+            noOfPeopleLabel1.Text = Form2.NoOfPeople.ToString();
             tableNoLabel1.Text = Form2.TableNo;
             typeOfMealLabel1.Text = Form2.TypeOfMeal;
         }
@@ -218,32 +218,8 @@ namespace WindowsFormsApplication1
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
 
-                //command.CommandText = "INSERT INTO Reservation (TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo) VALUES (@transactionNo, @firstName, @lastName, @middleName, @contactNo, @address, @typeOfMeal, @datee, @noOfPeople, @tableNo)";
-
-                command.CommandText = "INSERT INTO Reservation (FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo, Confirmation) VALUES ('" + firstNameLabel1.Text + "','" + lastNameLabel1.Text + "','" + middleNameLabel1.Text + "','" + contactNoLabel1.Text + "','" + addressLabel1.Text + "','" + typeOfMealLabel1.Text + "','" + dateLabel1.Text + "','" + noOfPeopleLabel1.Text + "','" + tableNoLabel1.Text + "','" + Form2.Confirmation + "')";
-
-                //command.CommandText = "INSERT INTO Reservation (FirstName) VALUES ('  firstNameLabel1.Text  ')";
-                //command.CommandText = "INSERT INTO Reservation (LastName) VALUES ('   lastNameLabel1.Text   ')";
-                //command.CommandText = "INSERT INTO Reservation (MiddleName) VALUES ('middleNameLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (ContactNo) VALUES ('contactNoLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (Address) VALUES ('addressLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (Date) VALUES ('dateLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (NoOfPeople) VALUES ('noOfPeopleLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (TableNo) VALUES ('tableNoLabel1.Text')";
-                //command.CommandText = "INSERT INTO Reservation (TypeOfMeal) VALUES ('typeOfMealLabel1.Text')";
-
-
-                //command.Parameters.AddWithValue("@transactionNo", transactionNoLabel1);
-                //command.Parameters.AddWithValue("@firstName", firstNameLabel1);
-                //command.Parameters.AddWithValue("@lastName", lastNameLabel1);
-                //command.Parameters.AddWithValue("@middleName", middleNameLabel1);
-                //command.Parameters.AddWithValue("@contactNo", contactNoLabel1);
-                //command.Parameters.AddWithValue("@address", addressLabel1);
-                //command.Parameters.AddWithValue("@typerOfMeal", typeOfMealLabel1);
-                //command.Parameters.AddWithValue("@datee", dateLabel1);
-                //command.Parameters.AddWithValue("@noOfPeople", noOfPeopleLabel1);
-                //command.Parameters.AddWithValue("@tableNo", tableNoLabel1);
-
+                command.CommandText = "INSERT INTO Reservation (FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, [Date], NoOfPeople, TableNo, AvailabilityFlg) VALUES ('" + firstNameLabel1.Text + "','" + lastNameLabel1.Text + "','" + middleNameLabel1.Text + "','" + contactNoLabel1.Text + "','" + addressLabel1.Text + "','" + typeOfMealLabel1.Text + "','" + dateLabel1.Text + "','" + noOfPeopleLabel1.Text + "','" + tableNoLabel1.Text + "','" + 1 + "')";
+                
                 command.ExecuteNonQuery();
                 command.Parameters.Clear();
                 MessageBox.Show("Saved");
@@ -280,7 +256,7 @@ namespace WindowsFormsApplication1
                 Address1 = addressLabel1.Text;
                 ContactNo1 = contactNoLabel1.Text;
                 Date1 = dateLabel1.Text;
-                NoOfPeople1 = (int) numericUpDown1.Value;
+                NoOfPeople1 = Convert.ToInt32(noOfPeopleLabel1.Text);
                 TableNo1 = tableNoLabel1.Text;
                 TypeOfMeal1 = typeOfMealLabel1.Text;
             }

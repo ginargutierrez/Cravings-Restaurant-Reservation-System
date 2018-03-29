@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tableNoTextBox = new System.Windows.Forms.TextBox();
             this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -142,7 +141,6 @@
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.tableNoTextBox);
             this.panel3.Controls.Add(this.label4);
@@ -173,18 +171,6 @@
             this.panel3.TabIndex = 5;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
-            this.comboBox1.Location = new System.Drawing.Point(255, 344);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(51, 21);
-            this.comboBox1.TabIndex = 40;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -192,17 +178,16 @@
             this.label6.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(165, 347);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 15);
+            this.label6.Size = new System.Drawing.Size(0, 15);
             this.label6.TabIndex = 39;
-            this.label6.Text = "Confirmation:";
             // 
             // tableNoTextBox
             // 
             this.tableNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource, "LastName", true));
             this.tableNoTextBox.Enabled = false;
-            this.tableNoTextBox.Location = new System.Drawing.Point(255, 315);
+            this.tableNoTextBox.Location = new System.Drawing.Point(255, 318);
             this.tableNoTextBox.Name = "tableNoTextBox";
-            this.tableNoTextBox.Size = new System.Drawing.Size(51, 20);
+            this.tableNoTextBox.Size = new System.Drawing.Size(200, 20);
             this.tableNoTextBox.TabIndex = 38;
             this.tableNoTextBox.TextChanged += new System.EventHandler(this.tableNoTextBox_TextChanged);
             // 
@@ -230,9 +215,9 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(217, 377);
+            this.btnBack.Location = new System.Drawing.Point(219, 375);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(73, 23);
             this.btnBack.TabIndex = 35;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -243,7 +228,7 @@
             this.noOfPeopleNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservationBindingSource7, "NoOfPeople", true));
             this.noOfPeopleNumericUpDown.Location = new System.Drawing.Point(255, 285);
             this.noOfPeopleNumericUpDown.Name = "noOfPeopleNumericUpDown";
-            this.noOfPeopleNumericUpDown.Size = new System.Drawing.Size(51, 20);
+            this.noOfPeopleNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.noOfPeopleNumericUpDown.TabIndex = 33;
             this.noOfPeopleNumericUpDown.ValueChanged += new System.EventHandler(this.noOfPeopleNumericUpDown_ValueChanged);
             // 
@@ -400,9 +385,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(380, 377);
+            this.button2.Location = new System.Drawing.Point(382, 375);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(73, 23);
             this.button2.TabIndex = 15;
             this.button2.Text = "Next";
             this.button2.UseVisualStyleBackColor = true;
@@ -410,9 +395,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(299, 377);
+            this.btnClear.Location = new System.Drawing.Point(301, 375);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(73, 23);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -937,7 +922,6 @@
         private System.Windows.Forms.TextBox tableNoTextBox;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
     }
 }
