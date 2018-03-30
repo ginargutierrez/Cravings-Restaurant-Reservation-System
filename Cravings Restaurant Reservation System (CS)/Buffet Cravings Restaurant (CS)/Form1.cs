@@ -679,6 +679,7 @@ namespace WindowsFormsApplication1
             {
                 Form4 form4 = new Form4();
                 form4.Show();
+                Visible = false;
             }
                 else if (d == DialogResult.No){ 
             }  

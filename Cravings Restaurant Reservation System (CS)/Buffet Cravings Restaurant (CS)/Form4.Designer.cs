@@ -39,18 +39,6 @@
             this.btnHome4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.reservationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGrid = new WindowsFormsApplication1.DataGrid();
-            this.label8 = new System.Windows.Forms.Label();
-            this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.reservationTableAdapter = new WindowsFormsApplication1.DataGridTableAdapters.ReservationTableAdapter();
             this.transactionNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +51,18 @@
             this.TableNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Cancel = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.reservationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGrid = new WindowsFormsApplication1.DataGrid();
+            this.label8 = new System.Windows.Forms.Label();
+            this.reservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.reservationTableAdapter = new WindowsFormsApplication1.DataGridTableAdapters.ReservationTableAdapter();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate4)).BeginInit();
@@ -200,6 +200,91 @@
             this.dataGridView1.TabIndex = 61;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // transactionNoDataGridViewTextBoxColumn
+            // 
+            this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
+            this.transactionNoDataGridViewTextBoxColumn.HeaderText = "Transaction No.";
+            this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
+            this.transactionNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
+            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // contactNoDataGridViewTextBoxColumn
+            // 
+            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
+            this.contactNoDataGridViewTextBoxColumn.HeaderText = "Contact No.";
+            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
+            this.contactNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // typeOfMealDataGridViewTextBoxColumn
+            // 
+            this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
+            this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "Type of Meal";
+            this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
+            this.typeOfMealDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Companions
+            // 
+            this.Companions.DataPropertyName = "NoOfPeople";
+            this.Companions.HeaderText = "No. of Companions";
+            this.Companions.Name = "Companions";
+            this.Companions.ReadOnly = true;
+            // 
+            // TableNo
+            // 
+            this.TableNo.DataPropertyName = "TableNo";
+            this.TableNo.HeaderText = "Table No.";
+            this.TableNo.Name = "TableNo";
+            this.TableNo.ReadOnly = true;
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            this.Update.HeaderText = "Done";
+            this.Update.Name = "Update";
+            this.Update.ReadOnly = true;
+            this.Update.Text = "Done";
+            this.Update.ToolTipText = "Update";
+            // 
+            // Cancel
+            // 
+            this.Cancel.HeaderText = "Cancel";
+            this.Cancel.Name = "Cancel";
+            this.Cancel.ReadOnly = true;
+            // 
             // reservationBindingSource1
             // 
             this.reservationBindingSource1.DataMember = "Reservation";
@@ -310,91 +395,6 @@
             // 
             this.reservationTableAdapter.ClearBeforeFill = true;
             // 
-            // transactionNoDataGridViewTextBoxColumn
-            // 
-            this.transactionNoDataGridViewTextBoxColumn.DataPropertyName = "TransactionNo";
-            this.transactionNoDataGridViewTextBoxColumn.HeaderText = "Transaction No.";
-            this.transactionNoDataGridViewTextBoxColumn.Name = "transactionNoDataGridViewTextBoxColumn";
-            this.transactionNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // middleNameDataGridViewTextBoxColumn
-            // 
-            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
-            this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
-            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
-            this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // contactNoDataGridViewTextBoxColumn
-            // 
-            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "ContactNo";
-            this.contactNoDataGridViewTextBoxColumn.HeaderText = "Contact No.";
-            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
-            this.contactNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // typeOfMealDataGridViewTextBoxColumn
-            // 
-            this.typeOfMealDataGridViewTextBoxColumn.DataPropertyName = "TypeOfMeal";
-            this.typeOfMealDataGridViewTextBoxColumn.HeaderText = "Type of Meal";
-            this.typeOfMealDataGridViewTextBoxColumn.Name = "typeOfMealDataGridViewTextBoxColumn";
-            this.typeOfMealDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Companions
-            // 
-            this.Companions.DataPropertyName = "NoOfPeople";
-            this.Companions.HeaderText = "No. of Companions";
-            this.Companions.Name = "Companions";
-            this.Companions.ReadOnly = true;
-            // 
-            // TableNo
-            // 
-            this.TableNo.DataPropertyName = "TableNo";
-            this.TableNo.HeaderText = "Table No.";
-            this.TableNo.Name = "TableNo";
-            this.TableNo.ReadOnly = true;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            this.Update.HeaderText = "Done";
-            this.Update.Name = "Update";
-            this.Update.ReadOnly = true;
-            this.Update.Text = "Done";
-            this.Update.ToolTipText = "Update";
-            // 
-            // Cancel
-            // 
-            this.Cancel.HeaderText = "Cancel";
-            this.Cancel.Name = "Cancel";
-            this.Cancel.ReadOnly = true;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +406,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Records";
