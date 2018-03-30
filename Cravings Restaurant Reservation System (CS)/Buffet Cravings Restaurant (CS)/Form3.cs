@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace WindowsFormsApplication1
 {
@@ -27,7 +28,9 @@ namespace WindowsFormsApplication1
         public Form3()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\GinaG\\Documents\\CRRS\\Cravings Restaurant Reservation System (CS)\Reservation.accdb";
+            string FolderPath = System.IO.Directory.GetCurrentDirectory();
+            var connectionPath = FolderPath.Replace("\\Buffet Cravings Restaurant (CS)\\bin\\Debug", "") + "\\" + "Reservation.accdb";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + connectionPath;
         }
 
         private void Form3_Load(object sender, EventArgs e)

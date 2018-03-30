@@ -56,7 +56,6 @@ namespace WindowsFormsApplication1
             addressTextBox.Text = Form3.Address1;
             contactNoTextBox.Text = Form3.ContactNo1;
             dateDateTimePicker.Text = Form3.Date1;
-            //noOfPeopleNumericUpDown.Maximum = Form1.CompanionNoMax;
             noOfPeopleNumericUpDown.Value = Form3.NoOfPeople1;
             tableNoTextBox.Text = Form3.TableNo1;
             typeOfMealComboBox.Text = Form3.TypeOfMeal1;

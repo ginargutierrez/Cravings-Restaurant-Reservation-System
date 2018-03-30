@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Web;
+using System.IO;
 
 namespace WindowsFormsApplication1
 {
@@ -30,7 +32,9 @@ namespace WindowsFormsApplication1
         public Form4()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\GinaG\\Documents\\CRRS\\Cravings Restaurant Reservation System (CS)\Reservation.accdb";
+            string FolderPath = System.IO.Directory.GetCurrentDirectory();
+            var connectionPath = FolderPath.Replace("\\Buffet Cravings Restaurant (CS)\\bin\\Debug", "") + "\\" + "Reservation.accdb";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + connectionPath;
         }
 
         private void btnHome4_Click(object sender, EventArgs e)
@@ -58,7 +62,7 @@ namespace WindowsFormsApplication1
         private void Form4_Load(object sender, EventArgs e)
         {
             //Use a variable to hold the SQL statement.
-            string query = "SELECT TransactionNo, FirstName, MiddleName, LastName, ContactNo, Address, TypeOfMeal, Date, NoOfPeople, TableNo FROM Reservation";
+            string query = "SELECT TransactionNo, FirstName, MiddleName, LastName, ContactNo, Address, TypeOfMeal, Date, NoOfPeople, TableNo FROM Reservation ORDER BY TransactionNo ASC ";
 
             try
             {
