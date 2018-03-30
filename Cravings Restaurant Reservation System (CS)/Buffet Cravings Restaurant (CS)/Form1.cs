@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public static string reservedDate;
         public static string reservedMeal;
         public static string reservedTable;
+        public static int CompanionNoMax = 0;
         public string table;
         public bool calendar = false;
         public bool reserve1 = false;
@@ -54,433 +55,145 @@ namespace WindowsFormsApplication1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             reserve1 = true;
-
+            RemoveColor();
             panel7.BackColor = Color.Tomato;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;  
+            CompanionNoMax = 6;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             reserve2 = true;
-
-            panel7.BackColor = Color.Transparent;
+            RemoveColor();
             panel8.BackColor = Color.Tomato;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 6;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             reserve3 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
+            RemoveColor();
             panel9.BackColor = Color.Tomato;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 6;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             reserve4 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
+            RemoveColor();
             panel10.BackColor = Color.Tomato;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 6;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             reserve5 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
+            RemoveColor();
             panel11.BackColor = Color.Tomato;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 12;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             reserve6 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
+            RemoveColor();
             panel15.BackColor = Color.Tomato;
-            panel14.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 12;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             reserve7 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
+            RemoveColor();
             panel12.BackColor = Color.Tomato;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 10;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             reserve8 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
+            RemoveColor();
             panel14.BackColor = Color.Tomato;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 10;
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             reserve9 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
+            RemoveColor();
             panel16.BackColor = Color.Tomato;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 4;
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             reserve10 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
+            RemoveColor();
             panel17.BackColor = Color.Tomato;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 4;
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             reserve11 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
+            RemoveColor();
             panel18.BackColor = Color.Tomato;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 4;
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             reserve12 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
+            RemoveColor();
             panel19.BackColor = Color.Tomato;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 4;
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             reserve13 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
+            RemoveColor();
             panel21.BackColor = Color.Tomato;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 2;
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             reserve14 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
+            RemoveColor();
             panel24.BackColor = Color.Tomato;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 2;
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             reserve15 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
+            RemoveColor();
             panel25.BackColor = Color.Tomato;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 2;
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             reserve16 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
+            RemoveColor();
             panel26.BackColor = Color.Tomato;
-            panel27.BackColor = Color.Transparent;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 2;
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             reserve17 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
+            RemoveColor();
             panel27.BackColor = Color.Tomato;
-            panel28.BackColor = Color.Transparent;
+            CompanionNoMax = 2;
         }
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             reserve18 = true;
-
-            panel7.BackColor = Color.Transparent;
-            panel8.BackColor = Color.Transparent;
-            panel9.BackColor = Color.Transparent;
-            panel10.BackColor = Color.Transparent;
-            panel11.BackColor = Color.Transparent;
-            panel12.BackColor = Color.Transparent;
-            panel14.BackColor = Color.Transparent;
-            panel15.BackColor = Color.Transparent;
-            panel16.BackColor = Color.Transparent;
-            panel17.BackColor = Color.Transparent;
-            panel18.BackColor = Color.Transparent;
-            panel19.BackColor = Color.Transparent;
-            panel21.BackColor = Color.Transparent;
-            panel24.BackColor = Color.Transparent;
-            panel25.BackColor = Color.Transparent;
-            panel26.BackColor = Color.Transparent;
-            panel27.BackColor = Color.Transparent;
+            RemoveColor();
             panel28.BackColor = Color.Tomato;
+            CompanionNoMax = 2;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -693,6 +406,28 @@ namespace WindowsFormsApplication1
         private void label16_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        public void RemoveColor() 
+        {
+            panel7.BackColor = Color.Transparent;
+            panel8.BackColor = Color.Transparent;
+            panel9.BackColor = Color.Transparent;
+            panel10.BackColor = Color.Transparent;
+            panel11.BackColor = Color.Transparent;
+            panel12.BackColor = Color.Transparent;
+            panel14.BackColor = Color.Transparent;
+            panel15.BackColor = Color.Transparent;
+            panel16.BackColor = Color.Transparent;
+            panel17.BackColor = Color.Transparent;
+            panel18.BackColor = Color.Transparent;
+            panel19.BackColor = Color.Transparent;
+            panel21.BackColor = Color.Transparent;
+            panel24.BackColor = Color.Transparent;
+            panel25.BackColor = Color.Transparent;
+            panel26.BackColor = Color.Transparent;
+            panel27.BackColor = Color.Transparent;
+            panel28.BackColor = Color.Transparent;
         }
     }
 }

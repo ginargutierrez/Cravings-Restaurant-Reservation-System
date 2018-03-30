@@ -56,12 +56,14 @@ namespace WindowsFormsApplication1
             addressTextBox.Text = Form3.Address1;
             contactNoTextBox.Text = Form3.ContactNo1;
             dateDateTimePicker.Text = Form3.Date1;
+            //noOfPeopleNumericUpDown.Maximum = Form1.CompanionNoMax;
             noOfPeopleNumericUpDown.Value = Form3.NoOfPeople1;
             tableNoTextBox.Text = Form3.TableNo1;
             typeOfMealComboBox.Text = Form3.TypeOfMeal1;
             typeOfMealComboBox.Text = Form1.reservedMeal;
             dateDateTimePicker.Text = Form1.reservedDate;
             tableNoTextBox.Text = Form1.reservedTable;
+
         }
 
         public void lastNameTextBox_TextChanged(object sender, EventArgs e)
@@ -216,6 +218,10 @@ namespace WindowsFormsApplication1
             if (LastName == "" || FirstName == "" || MiddleName == "" || Address == "" || ContactNo == "" || NoOfPeople == 0)
             {
                 MessageBox.Show("      Complete the form. All fields are required!");
+            }
+            else if(Convert.ToInt32(noOfPeopleNumericUpDown.Value) > Form1.CompanionNoMax)
+            {
+                MessageBox.Show("      Maximum of " + Form1.CompanionNoMax + " only!");
             }
             else
             {

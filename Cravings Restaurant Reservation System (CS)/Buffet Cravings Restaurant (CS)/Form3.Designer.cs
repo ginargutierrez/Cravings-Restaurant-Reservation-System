@@ -403,11 +403,11 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(132, 372);
+            this.label16.Location = new System.Drawing.Point(163, 372);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(115, 15);
+            this.label16.Size = new System.Drawing.Size(84, 15);
             this.label16.TabIndex = 21;
-            this.label16.Text = "No. of Companions:";
+            this.label16.Text = "No. of Person:";
             // 
             // label15
             // 
