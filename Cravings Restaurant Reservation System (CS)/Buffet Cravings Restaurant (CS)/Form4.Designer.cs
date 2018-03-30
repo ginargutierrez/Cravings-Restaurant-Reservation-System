@@ -32,11 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.panel2 = new System.Windows.Forms.Panel();
             this.Records4 = new System.Windows.Forms.Label();
-            this.Reservation4 = new System.Windows.Forms.Label();
             this.Create4 = new System.Windows.Forms.Label();
             this.Home4 = new System.Windows.Forms.Label();
             this.btnRecords4 = new System.Windows.Forms.PictureBox();
-            this.btnReservation4 = new System.Windows.Forms.PictureBox();
             this.btnCreate4 = new System.Windows.Forms.PictureBox();
             this.btnHome4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -55,17 +53,18 @@
             this.reservationTableAdapter = new WindowsFormsApplication1.DataGridTableAdapters.ReservationTableAdapter();
             this.transactionNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeOfMealDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Companions = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TableNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Cancel = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReservation4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome4)).BeginInit();
             this.panel3.SuspendLayout();
@@ -82,11 +81,9 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Records4);
-            this.panel2.Controls.Add(this.Reservation4);
             this.panel2.Controls.Add(this.Create4);
             this.panel2.Controls.Add(this.Home4);
             this.panel2.Controls.Add(this.btnRecords4);
-            this.panel2.Controls.Add(this.btnReservation4);
             this.panel2.Controls.Add(this.btnCreate4);
             this.panel2.Controls.Add(this.btnHome4);
             this.panel2.Location = new System.Drawing.Point(14, 103);
@@ -98,77 +95,54 @@
             // 
             this.Records4.AutoSize = true;
             this.Records4.BackColor = System.Drawing.Color.SandyBrown;
+            this.Records4.Enabled = false;
             this.Records4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Records4.Location = new System.Drawing.Point(502, 23);
+            this.Records4.Location = new System.Drawing.Point(451, 23);
             this.Records4.Name = "Records4";
             this.Records4.Size = new System.Drawing.Size(60, 18);
             this.Records4.TabIndex = 7;
             this.Records4.Text = "Records";
-            this.Records4.Click += new System.EventHandler(this.Records4_Click);
-            // 
-            // Reservation4
-            // 
-            this.Reservation4.AutoSize = true;
-            this.Reservation4.BackColor = System.Drawing.Color.Wheat;
-            this.Reservation4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reservation4.Location = new System.Drawing.Point(348, 23);
-            this.Reservation4.Name = "Reservation4";
-            this.Reservation4.Size = new System.Drawing.Size(76, 18);
-            this.Reservation4.TabIndex = 6;
-            this.Reservation4.Text = "Reservation";
-            this.Reservation4.Click += new System.EventHandler(this.Reservation4_Click);
             // 
             // Create4
             // 
             this.Create4.AutoSize = true;
             this.Create4.BackColor = System.Drawing.Color.Wheat;
+            this.Create4.Enabled = false;
             this.Create4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create4.Location = new System.Drawing.Point(224, 23);
+            this.Create4.Location = new System.Drawing.Point(310, 23);
             this.Create4.Name = "Create4";
             this.Create4.Size = new System.Drawing.Size(44, 18);
             this.Create4.TabIndex = 5;
             this.Create4.Text = "Create";
-            this.Create4.Click += new System.EventHandler(this.Create4_Click);
             // 
             // Home4
             // 
             this.Home4.AutoSize = true;
             this.Home4.BackColor = System.Drawing.Color.Wheat;
+            this.Home4.Enabled = false;
             this.Home4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Home4.Location = new System.Drawing.Point(81, 23);
+            this.Home4.Location = new System.Drawing.Point(164, 23);
             this.Home4.Name = "Home4";
             this.Home4.Size = new System.Drawing.Size(41, 18);
             this.Home4.TabIndex = 4;
             this.Home4.Text = "Home";
-            this.Home4.Click += new System.EventHandler(this.Home4_Click);
             // 
             // btnRecords4
             // 
             this.btnRecords4.BackColor = System.Drawing.Color.SandyBrown;
             this.btnRecords4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnRecords4.Location = new System.Drawing.Point(452, 12);
+            this.btnRecords4.Enabled = false;
+            this.btnRecords4.Location = new System.Drawing.Point(403, 12);
             this.btnRecords4.Name = "btnRecords4";
             this.btnRecords4.Size = new System.Drawing.Size(149, 39);
             this.btnRecords4.TabIndex = 3;
             this.btnRecords4.TabStop = false;
-            this.btnRecords4.Click += new System.EventHandler(this.btnRecords4_Click);
-            // 
-            // btnReservation4
-            // 
-            this.btnReservation4.BackColor = System.Drawing.Color.Wheat;
-            this.btnReservation4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnReservation4.Location = new System.Drawing.Point(316, 12);
-            this.btnReservation4.Name = "btnReservation4";
-            this.btnReservation4.Size = new System.Drawing.Size(149, 39);
-            this.btnReservation4.TabIndex = 2;
-            this.btnReservation4.TabStop = false;
-            this.btnReservation4.Click += new System.EventHandler(this.btnReservation4_Click);
             // 
             // btnCreate4
             // 
             this.btnCreate4.BackColor = System.Drawing.Color.Wheat;
             this.btnCreate4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnCreate4.Location = new System.Drawing.Point(172, 12);
+            this.btnCreate4.Location = new System.Drawing.Point(255, 12);
             this.btnCreate4.Name = "btnCreate4";
             this.btnCreate4.Size = new System.Drawing.Size(149, 39);
             this.btnCreate4.TabIndex = 1;
@@ -179,7 +153,7 @@
             // 
             this.btnHome4.BackColor = System.Drawing.Color.Wheat;
             this.btnHome4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnHome4.Location = new System.Drawing.Point(28, 12);
+            this.btnHome4.Location = new System.Drawing.Point(111, 12);
             this.btnHome4.Name = "btnHome4";
             this.btnHome4.Size = new System.Drawing.Size(149, 39);
             this.btnHome4.TabIndex = 0;
@@ -195,7 +169,7 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(14, 172);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(636, 437);
+            this.panel3.Size = new System.Drawing.Size(636, 430);
             this.panel3.TabIndex = 39;
             // 
             // dataGridView1
@@ -207,20 +181,22 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.transactionNoDataGridViewTextBoxColumn,
             this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
             this.middleNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
             this.contactNoDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
             this.typeOfMealDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
+            this.Companions,
+            this.TableNo,
             this.Update,
             this.Cancel});
             this.dataGridView1.DataSource = this.reservationBindingSource1;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(573, 367);
+            this.dataGridView1.Size = new System.Drawing.Size(573, 344);
             this.dataGridView1.TabIndex = 61;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -231,6 +207,7 @@
             // 
             // dataGrid
             // 
+            this.dataGrid.DataSetName = "DataGrid";
             this.dataGrid.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label8
@@ -238,7 +215,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 13);
+            this.label8.Location = new System.Drawing.Point(26, 24);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(162, 15);
             this.label8.TabIndex = 6;
@@ -315,9 +292,9 @@
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(217, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 18);
+            this.label2.Size = new System.Drawing.Size(251, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
+            this.label2.Text = "123 Eybisi St. SYSTeam Ave. Manila City";
             // 
             // label1
             // 
@@ -347,19 +324,19 @@
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
             this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // middleNameDataGridViewTextBoxColumn
             // 
             this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
             this.middleNameDataGridViewTextBoxColumn.HeaderText = "Middle Name";
             this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
             this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // contactNoDataGridViewTextBoxColumn
             // 
@@ -388,6 +365,20 @@
             this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Companions
+            // 
+            this.Companions.DataPropertyName = "NoOfPeople";
+            this.Companions.HeaderText = "No. of Companions";
+            this.Companions.Name = "Companions";
+            this.Companions.ReadOnly = true;
+            // 
+            // TableNo
+            // 
+            this.TableNo.DataPropertyName = "TableNo";
+            this.TableNo.HeaderText = "Table No.";
+            this.TableNo.Name = "TableNo";
+            this.TableNo.ReadOnly = true;
             // 
             // Update
             // 
@@ -422,7 +413,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReservation4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome4)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -441,11 +431,9 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Records4;
-        private System.Windows.Forms.Label Reservation4;
         private System.Windows.Forms.Label Create4;
         private System.Windows.Forms.Label Home4;
         private System.Windows.Forms.PictureBox btnRecords4;
-        private System.Windows.Forms.PictureBox btnReservation4;
         private System.Windows.Forms.PictureBox btnCreate4;
         private System.Windows.Forms.PictureBox btnHome4;
         private System.Windows.Forms.Panel panel3;
@@ -464,12 +452,14 @@
         private System.Windows.Forms.BindingSource reservationBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn transactionNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn middleNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeOfMealDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Companions;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TableNo;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewButtonColumn Cancel;
     }

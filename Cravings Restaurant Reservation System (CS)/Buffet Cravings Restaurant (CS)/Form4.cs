@@ -33,18 +33,6 @@ namespace WindowsFormsApplication1
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\GinaG\\Documents\\CRRS\\Cravings Restaurant Reservation System (CS)\Reservation.accdb";
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
-        private void Home4_Click(object sender, EventArgs e)
-        {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
-        }
-
         private void btnHome4_Click(object sender, EventArgs e)
         {
             var myForm1 = new Form1();
@@ -52,46 +40,9 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-        private void Create4_Click(object sender, EventArgs e)
-        {
-            var myForm2 = new Form2();
-            myForm2.Show();
-            Visible = false;
-        }
-
         private void btnCreate4_Click(object sender, EventArgs e)
         {
-            var myForm2 = new Form2();
-            myForm2.Show();
-            Visible = false;
-        }
-
-        private void Reservation4_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void btnReservation4_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void Records4_Click(object sender, EventArgs e)
-        {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
-        }
-
-        private void btnRecords4_Click(object sender, EventArgs e)
-        {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
+            MessageBox.Show("          Select the date, table and meal\n"+"        first at the Home bar to proceed.");
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -104,20 +55,10 @@ namespace WindowsFormsApplication1
             WindowState = FormWindowState.Minimized;
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form4_Load(object sender, EventArgs e)
         {
             //Use a variable to hold the SQL statement.
-            string query = "SELECT TransactionNo, FirstName, LastName, MiddleName, ContactNo, Address, TypeOfMeal, Date FROM Reservation";
+            string query = "SELECT TransactionNo, FirstName, MiddleName, LastName, ContactNo, Address, TypeOfMeal, Date, NoOfPeople, TableNo FROM Reservation";
 
             try
             {
@@ -199,16 +140,6 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("Error" + ex);
                 command.Connection.Close();
             }
-        }
-
-        private void dateDateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void typeOfMealComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

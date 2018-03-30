@@ -93,20 +93,18 @@
             this.tableAdapterManager8 = new WindowsFormsApplication1.TableNoTableAdapters.TableAdapterManager();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Records2 = new System.Windows.Forms.Label();
-            this.Reservation2 = new System.Windows.Forms.Label();
             this.Create2 = new System.Windows.Forms.Label();
             this.Home2 = new System.Windows.Forms.Label();
             this.btnRecords2 = new System.Windows.Forms.PictureBox();
-            this.btnReservation2 = new System.Windows.Forms.PictureBox();
             this.btnCreate2 = new System.Windows.Forms.PictureBox();
             this.btnHome2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reservationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastName)).BeginInit();
@@ -129,7 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableNo)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReservation2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -169,7 +166,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(636, 437);
             this.panel3.TabIndex = 5;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label6
             // 
@@ -189,7 +185,6 @@
             this.tableNoTextBox.Name = "tableNoTextBox";
             this.tableNoTextBox.Size = new System.Drawing.Size(200, 20);
             this.tableNoTextBox.TabIndex = 38;
-            this.tableNoTextBox.TextChanged += new System.EventHandler(this.tableNoTextBox_TextChanged);
             // 
             // reservationBindingSource
             // 
@@ -211,7 +206,6 @@
             this.label4.Size = new System.Drawing.Size(85, 12);
             this.label4.TabIndex = 37;
             this.label4.Text = "ex, 09972547217";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // btnBack
             // 
@@ -246,7 +240,7 @@
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.reservationBindingSource6, "Date", true));
             this.dateDateTimePicker.Enabled = false;
-            this.dateDateTimePicker.Location = new System.Drawing.Point(255, 249);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(255, 251);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
             this.dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateDateTimePicker.TabIndex = 32;
@@ -275,7 +269,6 @@
             this.typeOfMealComboBox.Name = "typeOfMealComboBox";
             this.typeOfMealComboBox.Size = new System.Drawing.Size(200, 21);
             this.typeOfMealComboBox.TabIndex = 31;
-            this.typeOfMealComboBox.SelectedIndexChanged += new System.EventHandler(this.typeOfMealComboBox_SelectedIndexChanged_1);
             // 
             // reservationBindingSource5
             // 
@@ -328,7 +321,7 @@
             // middleNameTextBox
             // 
             this.middleNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.reservationBindingSource2, "MiddleName", true));
-            this.middleNameTextBox.Location = new System.Drawing.Point(255, 121);
+            this.middleNameTextBox.Location = new System.Drawing.Point(255, 118);
             this.middleNameTextBox.Name = "middleNameTextBox";
             this.middleNameTextBox.Size = new System.Drawing.Size(200, 20);
             this.middleNameTextBox.TabIndex = 28;
@@ -377,7 +370,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(187, 325);
+            this.label18.Location = new System.Drawing.Point(187, 323);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(62, 15);
             this.label18.TabIndex = 24;
@@ -408,18 +401,18 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(166, 286);
+            this.label16.Location = new System.Drawing.Point(134, 290);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(83, 15);
+            this.label16.Size = new System.Drawing.Size(115, 15);
             this.label16.TabIndex = 13;
-            this.label16.Text = "No. of People:";
+            this.label16.Text = "No. of Companions:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(214, 254);
+            this.label15.Location = new System.Drawing.Point(214, 256);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 15);
             this.label15.TabIndex = 12;
@@ -430,7 +423,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(212, 219);
+            this.label14.Location = new System.Drawing.Point(212, 225);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(37, 15);
             this.label14.TabIndex = 11;
@@ -441,7 +434,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(176, 186);
+            this.label13.Location = new System.Drawing.Point(176, 191);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 15);
             this.label13.TabIndex = 10;
@@ -452,7 +445,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(194, 152);
+            this.label12.Location = new System.Drawing.Point(194, 155);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 15);
             this.label12.TabIndex = 9;
@@ -463,7 +456,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(165, 121);
+            this.label11.Location = new System.Drawing.Point(165, 123);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 15);
             this.label11.TabIndex = 8;
@@ -490,14 +483,13 @@
             this.label9.Size = new System.Drawing.Size(68, 15);
             this.label9.TabIndex = 6;
             this.label9.Text = "Last Name:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 29);
+            this.label8.Location = new System.Drawing.Point(21, 27);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(144, 15);
             this.label8.TabIndex = 5;
@@ -609,11 +601,9 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Records2);
-            this.panel2.Controls.Add(this.Reservation2);
             this.panel2.Controls.Add(this.Create2);
             this.panel2.Controls.Add(this.Home2);
             this.panel2.Controls.Add(this.btnRecords2);
-            this.panel2.Controls.Add(this.btnReservation2);
             this.panel2.Controls.Add(this.btnCreate2);
             this.panel2.Controls.Add(this.btnHome2);
             this.panel2.Location = new System.Drawing.Point(13, 103);
@@ -627,25 +617,11 @@
             this.Records2.BackColor = System.Drawing.Color.Wheat;
             this.Records2.Enabled = false;
             this.Records2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Records2.Location = new System.Drawing.Point(500, 23);
+            this.Records2.Location = new System.Drawing.Point(452, 23);
             this.Records2.Name = "Records2";
             this.Records2.Size = new System.Drawing.Size(53, 18);
             this.Records2.TabIndex = 7;
             this.Records2.Text = "Records";
-            this.Records2.Click += new System.EventHandler(this.Records2_Click);
-            // 
-            // Reservation2
-            // 
-            this.Reservation2.AutoSize = true;
-            this.Reservation2.BackColor = System.Drawing.Color.Wheat;
-            this.Reservation2.Enabled = false;
-            this.Reservation2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reservation2.Location = new System.Drawing.Point(348, 23);
-            this.Reservation2.Name = "Reservation2";
-            this.Reservation2.Size = new System.Drawing.Size(76, 18);
-            this.Reservation2.TabIndex = 6;
-            this.Reservation2.Text = "Reservation";
-            this.Reservation2.Click += new System.EventHandler(this.Reservation2_Click);
             // 
             // Create2
             // 
@@ -653,7 +629,7 @@
             this.Create2.BackColor = System.Drawing.Color.SandyBrown;
             this.Create2.Enabled = false;
             this.Create2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create2.Location = new System.Drawing.Point(224, 23);
+            this.Create2.Location = new System.Drawing.Point(307, 23);
             this.Create2.Name = "Create2";
             this.Create2.Size = new System.Drawing.Size(50, 18);
             this.Create2.TabIndex = 5;
@@ -665,52 +641,39 @@
             this.Home2.BackColor = System.Drawing.Color.Wheat;
             this.Home2.Enabled = false;
             this.Home2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Home2.Location = new System.Drawing.Point(81, 23);
+            this.Home2.Location = new System.Drawing.Point(164, 23);
             this.Home2.Name = "Home2";
             this.Home2.Size = new System.Drawing.Size(41, 18);
             this.Home2.TabIndex = 4;
             this.Home2.Text = "Home";
-            this.Home2.Click += new System.EventHandler(this.Home2_Click);
             // 
             // btnRecords2
             // 
             this.btnRecords2.BackColor = System.Drawing.Color.Wheat;
             this.btnRecords2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnRecords2.Location = new System.Drawing.Point(452, 12);
+            this.btnRecords2.Location = new System.Drawing.Point(403, 12);
             this.btnRecords2.Name = "btnRecords2";
             this.btnRecords2.Size = new System.Drawing.Size(149, 39);
             this.btnRecords2.TabIndex = 3;
             this.btnRecords2.TabStop = false;
             this.btnRecords2.Click += new System.EventHandler(this.btnRecords2_Click);
             // 
-            // btnReservation2
-            // 
-            this.btnReservation2.BackColor = System.Drawing.Color.Wheat;
-            this.btnReservation2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnReservation2.Location = new System.Drawing.Point(316, 12);
-            this.btnReservation2.Name = "btnReservation2";
-            this.btnReservation2.Size = new System.Drawing.Size(149, 39);
-            this.btnReservation2.TabIndex = 2;
-            this.btnReservation2.TabStop = false;
-            this.btnReservation2.Click += new System.EventHandler(this.btnReservation2_Click);
-            // 
             // btnCreate2
             // 
             this.btnCreate2.BackColor = System.Drawing.Color.SandyBrown;
             this.btnCreate2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnCreate2.Enabled = false;
-            this.btnCreate2.Location = new System.Drawing.Point(172, 12);
+            this.btnCreate2.Location = new System.Drawing.Point(255, 12);
             this.btnCreate2.Name = "btnCreate2";
             this.btnCreate2.Size = new System.Drawing.Size(149, 39);
             this.btnCreate2.TabIndex = 1;
             this.btnCreate2.TabStop = false;
-            this.btnCreate2.Click += new System.EventHandler(this.btnCreate2_Click);
             // 
             // btnHome2
             // 
             this.btnHome2.BackColor = System.Drawing.Color.Wheat;
             this.btnHome2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnHome2.Location = new System.Drawing.Point(28, 12);
+            this.btnHome2.Location = new System.Drawing.Point(111, 12);
             this.btnHome2.Name = "btnHome2";
             this.btnHome2.Size = new System.Drawing.Size(149, 39);
             this.btnHome2.TabIndex = 0;
@@ -724,40 +687,40 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel23);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(13, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 41;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(589, -3);
+            this.label29.Location = new System.Drawing.Point(584, 7);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 9;
+            this.label29.TabIndex = 43;
             this.label29.Text = "-";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
-            // label5
+            // label1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(611, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 19);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(606, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 19);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel23
             // 
@@ -783,19 +746,19 @@
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(217, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 18);
+            this.label2.Size = new System.Drawing.Size(251, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
+            this.label2.Text = "123 Eybisi St. SYSTeam Ave. Manila City";
             // 
-            // label1
+            // label5
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cravings Restaurant";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(251, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Cravings Restaurant";
             // 
             // Form2
             // 
@@ -803,8 +766,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(664, 621);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -835,7 +798,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReservation2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome2)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -905,23 +867,21 @@
         private TableNoTableAdapters.TableAdapterManager tableAdapterManager8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Records2;
-        private System.Windows.Forms.Label Reservation2;
         private System.Windows.Forms.Label Create2;
         private System.Windows.Forms.Label Home2;
         private System.Windows.Forms.PictureBox btnRecords2;
-        private System.Windows.Forms.PictureBox btnReservation2;
         private System.Windows.Forms.PictureBox btnCreate2;
         private System.Windows.Forms.PictureBox btnHome2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tableNoTextBox;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
     }
 }

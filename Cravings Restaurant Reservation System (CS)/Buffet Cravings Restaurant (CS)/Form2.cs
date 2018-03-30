@@ -59,7 +59,6 @@ namespace WindowsFormsApplication1
             noOfPeopleNumericUpDown.Value = Form3.NoOfPeople1;
             tableNoTextBox.Text = Form3.TableNo1;
             typeOfMealComboBox.Text = Form3.TypeOfMeal1;
-
             typeOfMealComboBox.Text = Form1.reservedMeal;
             dateDateTimePicker.Text = Form1.reservedDate;
             tableNoTextBox.Text = Form1.reservedTable;
@@ -140,68 +139,55 @@ namespace WindowsFormsApplication1
             NoOfPeople = Convert.ToInt32(noOfPeopleNumericUpDown.Value);
         }
 
-        private void Home2_Click(object sender, EventArgs e)
+        private void noOfPeopleNumericUpDown_KeyPress(object sender, KeyPressEventArgs e)
         {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         private void btnHome2_Click(object sender, EventArgs e)
         {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
-        }
-
-        private void btnCreate2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Reservation2_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void btnReservation2_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void Records2_Click(object sender, EventArgs e)
-        {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
+            DialogResult d = MessageBox.Show("          Do you really want to proceed? \n" + "       Your reservation will not be saved.", "Attention", MessageBoxButtons.YesNo);
+            if (d == DialogResult.Yes)
+            {
+                Form1 form1 = new Form1();
+                form1.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+            }
         }
 
         private void btnRecords2_Click(object sender, EventArgs e)
         {
-            if (!(typeOfMealComboBox.Text == "" || dateDateTimePicker.Text == "" || typeOfMealComboBox.Text == ""))
-            {
-                DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
+                DialogResult d = MessageBox.Show("          Do you really want to proceed? \n" + "       Your reservation will not be saved.", "Attention", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
                 {
-                    Form4 myForm4 = new Form4();
-                    myForm4.Show();
-                    this.Visible = false;
+                    Form4 form4 = new Form4();
+                    form4.Show();
                 }
-                else if (dialogResult == DialogResult.No)
+                else if (d == DialogResult.No)
                 {
-
                 }
-            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
+            DialogResult d = MessageBox.Show("          Do you really want to proceed? \n" + "       Your reservation will not be saved.", "Attention", MessageBoxButtons.YesNo);
+            if (d == DialogResult.Yes)
+            {
+                Form1 form1 = new Form1();
+                form1.Show();
+            }
+            else if (d == DialogResult.No)
+            {
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -214,35 +200,6 @@ namespace WindowsFormsApplication1
             noOfPeopleNumericUpDown.Value = 0;            
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableNoNumericUpDown_ValueChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableNoTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click_1(object sender, EventArgs e)
-        {
-
-        }
         private void button2_Click(object sender, EventArgs e)
         {
             LastName = lastNameTextBox.Text;
@@ -257,7 +214,7 @@ namespace WindowsFormsApplication1
 
             if (LastName == "" || FirstName == "" || MiddleName == "" || Address == "" || ContactNo == "" || NoOfPeople == 0)
             {
-                DialogResult d = MessageBox.Show("All fields are required!\n" + "Please complete the form.", "Attention!");
+                MessageBox.Show("      Complete the form. All fields are required!");
             }
             else
             {
@@ -267,23 +224,14 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void typeOfMealComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void label29_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

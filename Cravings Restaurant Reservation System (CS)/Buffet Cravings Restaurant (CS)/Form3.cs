@@ -10,7 +10,6 @@ using System.Data.OleDb;
 
 namespace WindowsFormsApplication1
 {
-    
     public partial class Form3 : Form
     {
         private OleDbConnection connection = new OleDbConnection();
@@ -24,7 +23,6 @@ namespace WindowsFormsApplication1
         public static int NoOfPeople1;
         public static string TableNo1;
         public static string TypeOfMeal1;
-        public bool button2_Clicked = false;
 
         public Form3()
         {
@@ -115,94 +113,8 @@ namespace WindowsFormsApplication1
             //tableNoLabel1.Text = Form2.TableNo;
         }
 
-        private void transactionNoLabel1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Home3_Click(object sender, EventArgs e)
-        {
-            var myForm1 = new Form1();
-            myForm1.Show();
-            Visible = false;
-        }
-
-        private void btnHome3_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                Form1 myForm1 = new Form1();
-                myForm1.Show();
-                this.Visible = false;
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-
-            }
-        }
-
-        private void Create3_Click(object sender, EventArgs e)
-        {
-            var myForm2 = new Form2();
-            myForm2.Show();
-            Visible = false;
-            DialogResult d = MessageBox.Show("The page cannot be opened.\n" + "Complete the reservation first to proceed.", "Attention!");
-        }
-
-        private void btnCreate3_Click(object sender, EventArgs e)
-        {
-            var myForm2 = new Form2();
-            myForm2.Show();
-            Visible = false;
-        }
-
-        private void Reservation3_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void btnReservation3_Click(object sender, EventArgs e)
-        {
-            var myForm3 = new Form3();
-            myForm3.Show();
-            Visible = false;
-        }
-
-        private void Records3_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to leave?\n" + "Unsaved changes will be void.", "Attention!", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                Form4 myForm4 = new Form4();
-                myForm4.Show();
-                this.Visible = false;
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-
-            }
-        }
-
-        private void btnRecords3_Click(object sender, EventArgs e)
-        {
-            var myForm4 = new Form4();
-            myForm4.Show();
-            Visible = false;
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            var myForm2 = new Form2();
-            myForm2.Show();
-            Visible = false;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            button2_Clicked = true;
             LastName1 = null;
             FirstName1 = null;
             MiddleName1 = null;
@@ -237,19 +149,6 @@ namespace WindowsFormsApplication1
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            if (button2_Clicked == true)
-            {
-                LastName1 = null;
-                FirstName1 = null;
-                MiddleName1 = null;
-                Address1 = null;
-                ContactNo1 = null;
-                TypeOfMeal1 = null;
-                NoOfPeople1 = 0;
-                TableNo1 = null;
-            }
-            else
-            {
                 LastName1 = lastNameLabel1.Text;
                 FirstName1 = firstNameLabel1.Text;
                 MiddleName1 = middleNameLabel1.Text;
@@ -259,7 +158,6 @@ namespace WindowsFormsApplication1
                 NoOfPeople1 = Convert.ToInt32(noOfPeopleLabel1.Text);
                 TableNo1 = tableNoLabel1.Text;
                 TypeOfMeal1 = typeOfMealLabel1.Text;
-            }
 
             Form2 form2 = new Form2();
             form2.Show();

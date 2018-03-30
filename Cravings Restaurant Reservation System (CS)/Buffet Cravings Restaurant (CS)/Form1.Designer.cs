@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape71 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.label5 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -216,22 +207,6 @@
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.shapeContainer10 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape61 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape60 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape59 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape58 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape49 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape50 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape51 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape52 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape53 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape54 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape55 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape56 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.rectangleShape57 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel4 = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label9 = new System.Windows.Forms.Label();
@@ -242,13 +217,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreate1)).BeginInit();
@@ -272,109 +252,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            this.panel13.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.panel23);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.shapeContainer1);
-            this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(636, 84);
-            this.panel1.TabIndex = 0;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(584, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(17, 24);
-            this.label29.TabIndex = 7;
-            this.label29.Text = "-";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(606, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 19);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "X";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // panel23
-            // 
-            this.panel23.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.icon;
-            this.panel23.Location = new System.Drawing.Point(149, 7);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(62, 62);
-            this.panel23.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(286, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "09987654321";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(217, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "123 Eybisi St. Straight Ave. Pasay City";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cravings Restaurant";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape71});
-            this.shapeContainer1.Size = new System.Drawing.Size(634, 82);
-            this.shapeContainer1.TabIndex = 5;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape71
-            // 
-            this.rectangleShape71.Location = new System.Drawing.Point(308, 33);
-            this.rectangleShape71.Name = "rectangleShape71";
-            this.rectangleShape71.Size = new System.Drawing.Size(19, 16);
             // 
             // label5
             // 
@@ -420,12 +302,11 @@
             this.Records1.BackColor = System.Drawing.Color.Wheat;
             this.Records1.Enabled = false;
             this.Records1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Records1.Location = new System.Drawing.Point(438, 23);
+            this.Records1.Location = new System.Drawing.Point(443, 23);
             this.Records1.Name = "Records1";
             this.Records1.Size = new System.Drawing.Size(53, 18);
             this.Records1.TabIndex = 7;
             this.Records1.Text = "Records";
-            this.Records1.Click += new System.EventHandler(this.Records1_Click_1);
             // 
             // Create1
             // 
@@ -433,12 +314,11 @@
             this.Create1.BackColor = System.Drawing.Color.Wheat;
             this.Create1.Enabled = false;
             this.Create1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Create1.Location = new System.Drawing.Point(298, 23);
+            this.Create1.Location = new System.Drawing.Point(305, 23);
             this.Create1.Name = "Create1";
             this.Create1.Size = new System.Drawing.Size(44, 18);
             this.Create1.TabIndex = 5;
             this.Create1.Text = "Create";
-            this.Create1.Click += new System.EventHandler(this.Create1_Click_1);
             // 
             // Home1
             // 
@@ -451,13 +331,12 @@
             this.Home1.Size = new System.Drawing.Size(45, 18);
             this.Home1.TabIndex = 4;
             this.Home1.Text = "Home";
-            this.Home1.Click += new System.EventHandler(this.Home1_Click);
             // 
             // btnRecords1
             // 
             this.btnRecords1.BackColor = System.Drawing.Color.Wheat;
             this.btnRecords1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnRecords1.Location = new System.Drawing.Point(395, 12);
+            this.btnRecords1.Location = new System.Drawing.Point(394, 12);
             this.btnRecords1.Name = "btnRecords1";
             this.btnRecords1.Size = new System.Drawing.Size(149, 39);
             this.btnRecords1.TabIndex = 3;
@@ -468,7 +347,7 @@
             // 
             this.btnCreate1.BackColor = System.Drawing.Color.Wheat;
             this.btnCreate1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnCreate1.Location = new System.Drawing.Point(246, 12);
+            this.btnCreate1.Location = new System.Drawing.Point(249, 12);
             this.btnCreate1.Name = "btnCreate1";
             this.btnCreate1.Size = new System.Drawing.Size(149, 39);
             this.btnCreate1.TabIndex = 1;
@@ -736,11 +615,11 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(170, 12);
+            this.label12.Location = new System.Drawing.Point(120, 11);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 15);
+            this.label12.Size = new System.Drawing.Size(192, 15);
             this.label12.TabIndex = 9;
-            this.label12.Text = "Floor Plan";
+            this.label12.Text = "Floor Plan | Select available table.";
             // 
             // shapeContainer19
             // 
@@ -868,642 +747,749 @@
             // 
             // rectangleShape88
             // 
+            this.rectangleShape88.Enabled = false;
             this.rectangleShape88.Location = new System.Drawing.Point(350, 393);
             this.rectangleShape88.Name = "rectangleShape88";
             this.rectangleShape88.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape87
             // 
+            this.rectangleShape87.Enabled = false;
             this.rectangleShape87.Location = new System.Drawing.Point(338, 396);
             this.rectangleShape87.Name = "rectangleShape87";
             this.rectangleShape87.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape86
             // 
+            this.rectangleShape86.Enabled = false;
             this.rectangleShape86.Location = new System.Drawing.Point(373, 396);
             this.rectangleShape86.Name = "rectangleShape86";
             this.rectangleShape86.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape85
             // 
+            this.rectangleShape85.Enabled = false;
             this.rectangleShape85.Location = new System.Drawing.Point(291, 393);
             this.rectangleShape85.Name = "rectangleShape85";
             this.rectangleShape85.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape64
             // 
+            this.rectangleShape64.Enabled = false;
             this.rectangleShape64.Location = new System.Drawing.Point(279, 396);
             this.rectangleShape64.Name = "rectangleShape64";
             this.rectangleShape64.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape63
             // 
+            this.rectangleShape63.Enabled = false;
             this.rectangleShape63.Location = new System.Drawing.Point(315, 396);
             this.rectangleShape63.Name = "rectangleShape63";
             this.rectangleShape63.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape62
             // 
+            this.rectangleShape62.Enabled = false;
             this.rectangleShape62.Location = new System.Drawing.Point(224, 393);
             this.rectangleShape62.Name = "rectangleShape62";
             this.rectangleShape62.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape48
             // 
+            this.rectangleShape48.Enabled = false;
             this.rectangleShape48.Location = new System.Drawing.Point(212, 396);
             this.rectangleShape48.Name = "rectangleShape48";
             this.rectangleShape48.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape47
             // 
+            this.rectangleShape47.Enabled = false;
             this.rectangleShape47.Location = new System.Drawing.Point(248, 396);
             this.rectangleShape47.Name = "rectangleShape47";
             this.rectangleShape47.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape65
             // 
+            this.rectangleShape65.Enabled = false;
             this.rectangleShape65.Location = new System.Drawing.Point(183, 397);
             this.rectangleShape65.Name = "rectangleShape74";
             this.rectangleShape65.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape66
             // 
+            this.rectangleShape66.Enabled = false;
             this.rectangleShape66.Location = new System.Drawing.Point(147, 397);
             this.rectangleShape66.Name = "rectangleShape73";
             this.rectangleShape66.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape67
             // 
+            this.rectangleShape67.Enabled = false;
             this.rectangleShape67.Location = new System.Drawing.Point(159, 394);
             this.rectangleShape67.Name = "rectangleShape72";
             this.rectangleShape67.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape46
             // 
+            this.rectangleShape46.Enabled = false;
             this.rectangleShape46.Location = new System.Drawing.Point(99, 392);
             this.rectangleShape46.Name = "rectangleShape46";
             this.rectangleShape46.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape5
             // 
+            this.rectangleShape5.Enabled = false;
             this.rectangleShape5.Location = new System.Drawing.Point(87, 395);
             this.rectangleShape5.Name = "rectangleShape5";
             this.rectangleShape5.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape4
             // 
+            this.rectangleShape4.Enabled = false;
             this.rectangleShape4.Location = new System.Drawing.Point(123, 395);
             this.rectangleShape4.Name = "rectangleShape4";
             this.rectangleShape4.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape3
             // 
+            this.rectangleShape3.Enabled = false;
             this.rectangleShape3.Location = new System.Drawing.Point(30, 394);
             this.rectangleShape3.Name = "rectangleShape3";
             this.rectangleShape3.Size = new System.Drawing.Size(19, 16);
             // 
             // rectangleShape2
             // 
+            this.rectangleShape2.Enabled = false;
             this.rectangleShape2.Location = new System.Drawing.Point(18, 397);
             this.rectangleShape2.Name = "rectangleShape2";
             this.rectangleShape2.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape1
             // 
+            this.rectangleShape1.Enabled = false;
             this.rectangleShape1.Location = new System.Drawing.Point(54, 397);
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape84
             // 
+            this.rectangleShape84.Enabled = false;
             this.rectangleShape84.Location = new System.Drawing.Point(309, 309);
             this.rectangleShape84.Name = "rectangleShape84";
             this.rectangleShape84.Size = new System.Drawing.Size(38, 19);
             // 
             // rectangleShape83
             // 
+            this.rectangleShape83.Enabled = false;
             this.rectangleShape83.Location = new System.Drawing.Point(311, 296);
             this.rectangleShape83.Name = "rectangleShape83";
             this.rectangleShape83.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape82
             // 
+            this.rectangleShape82.Enabled = false;
             this.rectangleShape82.Location = new System.Drawing.Point(332, 296);
             this.rectangleShape82.Name = "rectangleShape82";
             this.rectangleShape82.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape81
             // 
+            this.rectangleShape81.Enabled = false;
             this.rectangleShape81.Location = new System.Drawing.Point(332, 332);
             this.rectangleShape81.Name = "rectangleShape81";
             this.rectangleShape81.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape80
             // 
+            this.rectangleShape80.Enabled = false;
             this.rectangleShape80.Location = new System.Drawing.Point(311, 332);
             this.rectangleShape80.Name = "rectangleShape80";
             this.rectangleShape80.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape24
             // 
+            this.rectangleShape24.Enabled = false;
             this.rectangleShape24.Location = new System.Drawing.Point(220, 305);
             this.rectangleShape24.Name = "rectangleShape24";
             this.rectangleShape24.Size = new System.Drawing.Size(38, 19);
             // 
             // rectangleShape23
             // 
+            this.rectangleShape23.Enabled = false;
             this.rectangleShape23.Location = new System.Drawing.Point(222, 292);
             this.rectangleShape23.Name = "rectangleShape23";
             this.rectangleShape23.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape22
             // 
+            this.rectangleShape22.Enabled = false;
             this.rectangleShape22.Location = new System.Drawing.Point(243, 292);
             this.rectangleShape22.Name = "rectangleShape22";
             this.rectangleShape22.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape21
             // 
+            this.rectangleShape21.Enabled = false;
             this.rectangleShape21.Location = new System.Drawing.Point(243, 328);
             this.rectangleShape21.Name = "rectangleShape21";
             this.rectangleShape21.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape20
             // 
+            this.rectangleShape20.Enabled = false;
             this.rectangleShape20.Location = new System.Drawing.Point(222, 328);
             this.rectangleShape20.Name = "rectangleShape20";
             this.rectangleShape20.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape79
             // 
+            this.rectangleShape79.Enabled = false;
             this.rectangleShape79.Location = new System.Drawing.Point(134, 307);
             this.rectangleShape79.Name = "rectangleShape79";
             this.rectangleShape79.Size = new System.Drawing.Size(38, 19);
             // 
             // rectangleShape39
             // 
+            this.rectangleShape39.Enabled = false;
             this.rectangleShape39.Location = new System.Drawing.Point(136, 294);
             this.rectangleShape39.Name = "rectangleShape39";
             this.rectangleShape39.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape38
             // 
+            this.rectangleShape38.Enabled = false;
             this.rectangleShape38.Location = new System.Drawing.Point(157, 294);
             this.rectangleShape38.Name = "rectangleShape38";
             this.rectangleShape38.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape37
             // 
+            this.rectangleShape37.Enabled = false;
             this.rectangleShape37.Location = new System.Drawing.Point(157, 330);
             this.rectangleShape37.Name = "rectangleShape37";
             this.rectangleShape37.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape29
             // 
+            this.rectangleShape29.Enabled = false;
             this.rectangleShape29.Location = new System.Drawing.Point(136, 330);
             this.rectangleShape29.Name = "rectangleShape29";
             this.rectangleShape29.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape28
             // 
+            this.rectangleShape28.Enabled = false;
             this.rectangleShape28.Location = new System.Drawing.Point(41, 311);
             this.rectangleShape28.Name = "rectangleShape28";
             this.rectangleShape28.Size = new System.Drawing.Size(38, 19);
             // 
             // rectangleShape27
             // 
+            this.rectangleShape27.Enabled = false;
             this.rectangleShape27.Location = new System.Drawing.Point(43, 298);
             this.rectangleShape27.Name = "rectangleShape27";
             this.rectangleShape27.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape26
             // 
+            this.rectangleShape26.Enabled = false;
             this.rectangleShape26.Location = new System.Drawing.Point(64, 298);
             this.rectangleShape26.Name = "rectangleShape26";
             this.rectangleShape26.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape25
             // 
+            this.rectangleShape25.Enabled = false;
             this.rectangleShape25.Location = new System.Drawing.Point(64, 334);
             this.rectangleShape25.Name = "rectangleShape25";
             this.rectangleShape25.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape19
             // 
+            this.rectangleShape19.Enabled = false;
             this.rectangleShape19.Location = new System.Drawing.Point(43, 334);
             this.rectangleShape19.Name = "rectangleShape19";
             this.rectangleShape19.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape149
             // 
+            this.rectangleShape149.Enabled = false;
             this.rectangleShape149.Location = new System.Drawing.Point(233, 165);
             this.rectangleShape149.Name = "rectangleShape149";
             this.rectangleShape149.Size = new System.Drawing.Size(19, 70);
             // 
             // rectangleShape148
             // 
+            this.rectangleShape148.Enabled = false;
             this.rectangleShape148.Location = new System.Drawing.Point(256, 172);
             this.rectangleShape148.Name = "rectangleShape148";
             this.rectangleShape148.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape147
             // 
+            this.rectangleShape147.Enabled = false;
             this.rectangleShape147.Location = new System.Drawing.Point(256, 220);
             this.rectangleShape147.Name = "rectangleShape147";
             this.rectangleShape147.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape146
             // 
+            this.rectangleShape146.Enabled = false;
             this.rectangleShape146.Location = new System.Drawing.Point(256, 204);
             this.rectangleShape146.Name = "rectangleShape146";
             this.rectangleShape146.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape145
             // 
+            this.rectangleShape145.Enabled = false;
             this.rectangleShape145.Location = new System.Drawing.Point(256, 188);
             this.rectangleShape145.Name = "rectangleShape145";
             this.rectangleShape145.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape144
             // 
+            this.rectangleShape144.Enabled = false;
             this.rectangleShape144.Location = new System.Drawing.Point(221, 172);
             this.rectangleShape144.Name = "rectangleShape144";
             this.rectangleShape144.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape143
             // 
+            this.rectangleShape143.Enabled = false;
             this.rectangleShape143.Location = new System.Drawing.Point(221, 188);
             this.rectangleShape143.Name = "rectangleShape143";
             this.rectangleShape143.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape142
             // 
+            this.rectangleShape142.Enabled = false;
             this.rectangleShape142.Location = new System.Drawing.Point(221, 204);
             this.rectangleShape142.Name = "rectangleShape142";
             this.rectangleShape142.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape141
             // 
+            this.rectangleShape141.Enabled = false;
             this.rectangleShape141.Location = new System.Drawing.Point(221, 220);
             this.rectangleShape141.Name = "rectangleShape141";
             this.rectangleShape141.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape140
             // 
+            this.rectangleShape140.Enabled = false;
             this.rectangleShape140.Location = new System.Drawing.Point(237, 239);
             this.rectangleShape140.Name = "rectangleShape140";
             this.rectangleShape140.Size = new System.Drawing.Size(10, 8);
             // 
             // rectangleShape139
             // 
+            this.rectangleShape139.Enabled = false;
             this.rectangleShape139.Location = new System.Drawing.Point(238, 153);
             this.rectangleShape139.Name = "rectangleShape139";
             this.rectangleShape139.Size = new System.Drawing.Size(10, 8);
             // 
             // rectangleShape138
             // 
+            this.rectangleShape138.Enabled = false;
             this.rectangleShape138.Location = new System.Drawing.Point(146, 167);
             this.rectangleShape138.Name = "rectangleShape138";
             this.rectangleShape138.Size = new System.Drawing.Size(19, 70);
             // 
             // rectangleShape137
             // 
+            this.rectangleShape137.Enabled = false;
             this.rectangleShape137.Location = new System.Drawing.Point(169, 174);
             this.rectangleShape137.Name = "rectangleShape137";
             this.rectangleShape137.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape136
             // 
+            this.rectangleShape136.Enabled = false;
             this.rectangleShape136.Location = new System.Drawing.Point(169, 222);
             this.rectangleShape136.Name = "rectangleShape136";
             this.rectangleShape136.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape135
             // 
+            this.rectangleShape135.Enabled = false;
             this.rectangleShape135.Location = new System.Drawing.Point(169, 206);
             this.rectangleShape135.Name = "rectangleShape135";
             this.rectangleShape135.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape134
             // 
+            this.rectangleShape134.Enabled = false;
             this.rectangleShape134.Location = new System.Drawing.Point(169, 190);
             this.rectangleShape134.Name = "rectangleShape134";
             this.rectangleShape134.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape133
             // 
+            this.rectangleShape133.Enabled = false;
             this.rectangleShape133.Location = new System.Drawing.Point(134, 174);
             this.rectangleShape133.Name = "rectangleShape133";
             this.rectangleShape133.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape132
             // 
+            this.rectangleShape132.Enabled = false;
             this.rectangleShape132.Location = new System.Drawing.Point(134, 190);
             this.rectangleShape132.Name = "rectangleShape132";
             this.rectangleShape132.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape131
             // 
+            this.rectangleShape131.Enabled = false;
             this.rectangleShape131.Location = new System.Drawing.Point(134, 206);
             this.rectangleShape131.Name = "rectangleShape131";
             this.rectangleShape131.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape130
             // 
+            this.rectangleShape130.Enabled = false;
             this.rectangleShape130.Location = new System.Drawing.Point(134, 222);
             this.rectangleShape130.Name = "rectangleShape130";
             this.rectangleShape130.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape129
             // 
+            this.rectangleShape129.Enabled = false;
             this.rectangleShape129.Location = new System.Drawing.Point(150, 241);
             this.rectangleShape129.Name = "rectangleShape129";
             this.rectangleShape129.Size = new System.Drawing.Size(10, 8);
             // 
             // rectangleShape106
             // 
+            this.rectangleShape106.Enabled = false;
             this.rectangleShape106.Location = new System.Drawing.Point(151, 155);
             this.rectangleShape106.Name = "rectangleShape106";
             this.rectangleShape106.Size = new System.Drawing.Size(10, 8);
             // 
             // rectangleShape18
             // 
+            this.rectangleShape18.Enabled = false;
             this.rectangleShape18.Location = new System.Drawing.Point(349, 234);
             this.rectangleShape18.Name = "rectangleShape18";
             this.rectangleShape18.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape17
             // 
+            this.rectangleShape17.Enabled = false;
             this.rectangleShape17.Location = new System.Drawing.Point(349, 218);
             this.rectangleShape17.Name = "rectangleShape17";
             this.rectangleShape17.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape16
             // 
+            this.rectangleShape16.Enabled = false;
             this.rectangleShape16.Location = new System.Drawing.Point(314, 218);
             this.rectangleShape16.Name = "rectangleShape16";
             this.rectangleShape16.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape15
             // 
+            this.rectangleShape15.Enabled = false;
             this.rectangleShape15.Location = new System.Drawing.Point(314, 234);
             this.rectangleShape15.Name = "rectangleShape15";
             this.rectangleShape15.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape14
             // 
+            this.rectangleShape14.Enabled = false;
             this.rectangleShape14.Location = new System.Drawing.Point(314, 201);
             this.rectangleShape14.Name = "rectangleShape14";
             this.rectangleShape14.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape13
             // 
+            this.rectangleShape13.Enabled = false;
             this.rectangleShape13.Location = new System.Drawing.Point(314, 185);
             this.rectangleShape13.Name = "rectangleShape13";
             this.rectangleShape13.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape12
             // 
+            this.rectangleShape12.Enabled = false;
             this.rectangleShape12.Location = new System.Drawing.Point(314, 169);
             this.rectangleShape12.Name = "rectangleShape12";
             this.rectangleShape12.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape11
             // 
+            this.rectangleShape11.Enabled = false;
             this.rectangleShape11.Location = new System.Drawing.Point(314, 153);
             this.rectangleShape11.Name = "rectangleShape11";
             this.rectangleShape11.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape10
             // 
+            this.rectangleShape10.Enabled = false;
             this.rectangleShape10.Location = new System.Drawing.Point(349, 169);
             this.rectangleShape10.Name = "rectangleShape10";
             this.rectangleShape10.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape9
             // 
+            this.rectangleShape9.Enabled = false;
             this.rectangleShape9.Location = new System.Drawing.Point(349, 185);
             this.rectangleShape9.Name = "rectangleShape9";
             this.rectangleShape9.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape8
             // 
+            this.rectangleShape8.Enabled = false;
             this.rectangleShape8.Location = new System.Drawing.Point(349, 201);
             this.rectangleShape8.Name = "rectangleShape8";
             this.rectangleShape8.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape7
             // 
+            this.rectangleShape7.Enabled = false;
             this.rectangleShape7.Location = new System.Drawing.Point(349, 153);
             this.rectangleShape7.Name = "rectangleShape7";
             this.rectangleShape7.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape6
             // 
+            this.rectangleShape6.Enabled = false;
             this.rectangleShape6.Location = new System.Drawing.Point(326, 146);
             this.rectangleShape6.Name = "rectangleShape6";
             this.rectangleShape6.Size = new System.Drawing.Size(19, 108);
             // 
             // rectangleShape105
             // 
+            this.rectangleShape105.Enabled = false;
             this.rectangleShape105.Location = new System.Drawing.Point(54, 146);
             this.rectangleShape105.Name = "rectangleShape105";
             this.rectangleShape105.Size = new System.Drawing.Size(19, 108);
             // 
             // rectangleShape104
             // 
+            this.rectangleShape104.Enabled = false;
             this.rectangleShape104.Location = new System.Drawing.Point(77, 153);
             this.rectangleShape104.Name = "rectangleShape104";
             this.rectangleShape104.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape103
             // 
+            this.rectangleShape103.Enabled = false;
             this.rectangleShape103.Location = new System.Drawing.Point(77, 201);
             this.rectangleShape103.Name = "rectangleShape103";
             this.rectangleShape103.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape102
             // 
+            this.rectangleShape102.Enabled = false;
             this.rectangleShape102.Location = new System.Drawing.Point(77, 185);
             this.rectangleShape102.Name = "rectangleShape102";
             this.rectangleShape102.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape101
             // 
+            this.rectangleShape101.Enabled = false;
             this.rectangleShape101.Location = new System.Drawing.Point(77, 169);
             this.rectangleShape101.Name = "rectangleShape101";
             this.rectangleShape101.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape100
             // 
+            this.rectangleShape100.Enabled = false;
             this.rectangleShape100.Location = new System.Drawing.Point(42, 153);
             this.rectangleShape100.Name = "rectangleShape100";
             this.rectangleShape100.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape78
             // 
+            this.rectangleShape78.Enabled = false;
             this.rectangleShape78.Location = new System.Drawing.Point(42, 169);
             this.rectangleShape78.Name = "rectangleShape78";
             this.rectangleShape78.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape77
             // 
+            this.rectangleShape77.Enabled = false;
             this.rectangleShape77.Location = new System.Drawing.Point(42, 185);
             this.rectangleShape77.Name = "rectangleShape77";
             this.rectangleShape77.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape74
             // 
+            this.rectangleShape74.Enabled = false;
             this.rectangleShape74.Location = new System.Drawing.Point(42, 201);
             this.rectangleShape74.Name = "rectangleShape74";
             this.rectangleShape74.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape73
             // 
+            this.rectangleShape73.Enabled = false;
             this.rectangleShape73.Location = new System.Drawing.Point(42, 234);
             this.rectangleShape73.Name = "rectangleShape73";
             this.rectangleShape73.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape72
             // 
+            this.rectangleShape72.Enabled = false;
             this.rectangleShape72.Location = new System.Drawing.Point(42, 218);
             this.rectangleShape72.Name = "rectangleShape72";
             this.rectangleShape72.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape70
             // 
+            this.rectangleShape70.Enabled = false;
             this.rectangleShape70.Location = new System.Drawing.Point(77, 218);
             this.rectangleShape70.Name = "rectangleShape70";
             this.rectangleShape70.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape69
             // 
+            this.rectangleShape69.Enabled = false;
             this.rectangleShape69.Location = new System.Drawing.Point(77, 234);
             this.rectangleShape69.Name = "rectangleShape69";
             this.rectangleShape69.Size = new System.Drawing.Size(8, 10);
             // 
             // rectangleShape68
             // 
+            this.rectangleShape68.Enabled = false;
             this.rectangleShape68.Location = new System.Drawing.Point(306, 63);
             this.rectangleShape68.Name = "rectangleShape68";
             this.rectangleShape68.Size = new System.Drawing.Size(59, 19);
             // 
             // rectangleShape45
             // 
+            this.rectangleShape45.Enabled = false;
             this.rectangleShape45.Location = new System.Drawing.Point(308, 50);
             this.rectangleShape45.Name = "rectangleShape45";
             this.rectangleShape45.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape44
             // 
+            this.rectangleShape44.Enabled = false;
             this.rectangleShape44.Location = new System.Drawing.Point(329, 50);
             this.rectangleShape44.Name = "rectangleShape44";
             this.rectangleShape44.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape43
             // 
+            this.rectangleShape43.Enabled = false;
             this.rectangleShape43.Location = new System.Drawing.Point(349, 50);
             this.rectangleShape43.Name = "rectangleShape43";
             this.rectangleShape43.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape42
             // 
+            this.rectangleShape42.Enabled = false;
             this.rectangleShape42.Location = new System.Drawing.Point(349, 86);
             this.rectangleShape42.Name = "rectangleShape42";
             this.rectangleShape42.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape41
             // 
+            this.rectangleShape41.Enabled = false;
             this.rectangleShape41.Location = new System.Drawing.Point(329, 86);
             this.rectangleShape41.Name = "rectangleShape41";
             this.rectangleShape41.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape40
             // 
+            this.rectangleShape40.Enabled = false;
             this.rectangleShape40.Location = new System.Drawing.Point(308, 86);
             this.rectangleShape40.Name = "rectangleShape40";
             this.rectangleShape40.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape128
             // 
+            this.rectangleShape128.Enabled = false;
             this.rectangleShape128.Location = new System.Drawing.Point(216, 62);
             this.rectangleShape128.Name = "rectangleShape128";
             this.rectangleShape128.Size = new System.Drawing.Size(59, 19);
             // 
             // rectangleShape127
             // 
+            this.rectangleShape127.Enabled = false;
             this.rectangleShape127.Location = new System.Drawing.Point(218, 49);
             this.rectangleShape127.Name = "rectangleShape127";
             this.rectangleShape127.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape126
             // 
+            this.rectangleShape126.Enabled = false;
             this.rectangleShape126.Location = new System.Drawing.Point(239, 49);
             this.rectangleShape126.Name = "rectangleShape126";
             this.rectangleShape126.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape125
             // 
+            this.rectangleShape125.Enabled = false;
             this.rectangleShape125.Location = new System.Drawing.Point(259, 49);
             this.rectangleShape125.Name = "rectangleShape125";
             this.rectangleShape125.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape124
             // 
+            this.rectangleShape124.Enabled = false;
             this.rectangleShape124.Location = new System.Drawing.Point(259, 85);
             this.rectangleShape124.Name = "rectangleShape124";
             this.rectangleShape124.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape123
             // 
+            this.rectangleShape123.Enabled = false;
             this.rectangleShape123.Location = new System.Drawing.Point(239, 85);
             this.rectangleShape123.Name = "rectangleShape123";
             this.rectangleShape123.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape122
             // 
+            this.rectangleShape122.Enabled = false;
             this.rectangleShape122.Location = new System.Drawing.Point(218, 85);
             this.rectangleShape122.Name = "rectangleShape122";
             this.rectangleShape122.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape36
             // 
+            this.rectangleShape36.Enabled = false;
             this.rectangleShape36.Location = new System.Drawing.Point(127, 63);
             this.rectangleShape36.Name = "rectangleShape36";
             this.rectangleShape36.Size = new System.Drawing.Size(59, 19);
             // 
             // rectangleShape35
             // 
+            this.rectangleShape35.Enabled = false;
             this.rectangleShape35.Location = new System.Drawing.Point(129, 50);
             this.rectangleShape35.Name = "rectangleShape35";
             this.rectangleShape35.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape34
             // 
+            this.rectangleShape34.Enabled = false;
             this.rectangleShape34.Location = new System.Drawing.Point(150, 50);
             this.rectangleShape34.Name = "rectangleShape34";
             this.rectangleShape34.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape33
             // 
+            this.rectangleShape33.Enabled = false;
             this.rectangleShape33.Location = new System.Drawing.Point(170, 50);
             this.rectangleShape33.Name = "rectangleShape33";
             this.rectangleShape33.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape32
             // 
+            this.rectangleShape32.Enabled = false;
             this.rectangleShape32.Location = new System.Drawing.Point(170, 86);
             this.rectangleShape32.Name = "rectangleShape32";
             this.rectangleShape32.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape31
             // 
+            this.rectangleShape31.Enabled = false;
             this.rectangleShape31.Location = new System.Drawing.Point(150, 86);
             this.rectangleShape31.Name = "rectangleShape31";
             this.rectangleShape31.Size = new System.Drawing.Size(14, 8);
             // 
             // rectangleShape30
             // 
+            this.rectangleShape30.Enabled = false;
             this.rectangleShape30.Location = new System.Drawing.Point(129, 86);
             this.rectangleShape30.Name = "rectangleShape30";
             this.rectangleShape30.Size = new System.Drawing.Size(14, 8);
@@ -1907,128 +1893,6 @@
             this.panel28.Size = new System.Drawing.Size(61, 48);
             this.panel28.TabIndex = 48;
             // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.Controls.Add(this.label24);
-            this.panel13.Controls.Add(this.shapeContainer10);
-            this.panel13.Location = new System.Drawing.Point(565, 5);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(68, 150);
-            this.panel13.TabIndex = 4;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(26, 61);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(17, 12);
-            this.label24.TabIndex = 21;
-            this.label24.Text = "F2";
-            // 
-            // shapeContainer10
-            // 
-            this.shapeContainer10.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer10.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer10.Name = "shapeContainer10";
-            this.shapeContainer10.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape61,
-            this.rectangleShape60,
-            this.rectangleShape59,
-            this.rectangleShape58,
-            this.rectangleShape49,
-            this.rectangleShape50,
-            this.rectangleShape51,
-            this.rectangleShape52,
-            this.rectangleShape53,
-            this.rectangleShape54,
-            this.rectangleShape55,
-            this.rectangleShape56,
-            this.rectangleShape57});
-            this.shapeContainer10.Size = new System.Drawing.Size(68, 150);
-            this.shapeContainer10.TabIndex = 0;
-            this.shapeContainer10.TabStop = false;
-            // 
-            // rectangleShape61
-            // 
-            this.rectangleShape61.Location = new System.Drawing.Point(47, 107);
-            this.rectangleShape61.Name = "rectangleShape61";
-            this.rectangleShape61.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape60
-            // 
-            this.rectangleShape60.Location = new System.Drawing.Point(47, 91);
-            this.rectangleShape60.Name = "rectangleShape60";
-            this.rectangleShape60.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape59
-            // 
-            this.rectangleShape59.Location = new System.Drawing.Point(12, 91);
-            this.rectangleShape59.Name = "rectangleShape59";
-            this.rectangleShape59.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape58
-            // 
-            this.rectangleShape58.Location = new System.Drawing.Point(12, 107);
-            this.rectangleShape58.Name = "rectangleShape58";
-            this.rectangleShape58.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape49
-            // 
-            this.rectangleShape49.Location = new System.Drawing.Point(12, 74);
-            this.rectangleShape49.Name = "rectangleShape18";
-            this.rectangleShape49.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape50
-            // 
-            this.rectangleShape50.Location = new System.Drawing.Point(12, 58);
-            this.rectangleShape50.Name = "rectangleShape17";
-            this.rectangleShape50.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape51
-            // 
-            this.rectangleShape51.Location = new System.Drawing.Point(12, 42);
-            this.rectangleShape51.Name = "rectangleShape16";
-            this.rectangleShape51.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape52
-            // 
-            this.rectangleShape52.Location = new System.Drawing.Point(12, 26);
-            this.rectangleShape52.Name = "rectangleShape11";
-            this.rectangleShape52.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape53
-            // 
-            this.rectangleShape53.Location = new System.Drawing.Point(47, 42);
-            this.rectangleShape53.Name = "rectangleShape15";
-            this.rectangleShape53.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape54
-            // 
-            this.rectangleShape54.Location = new System.Drawing.Point(47, 58);
-            this.rectangleShape54.Name = "rectangleShape14";
-            this.rectangleShape54.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape55
-            // 
-            this.rectangleShape55.Location = new System.Drawing.Point(47, 74);
-            this.rectangleShape55.Name = "rectangleShape13";
-            this.rectangleShape55.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape56
-            // 
-            this.rectangleShape56.Location = new System.Drawing.Point(47, 26);
-            this.rectangleShape56.Name = "rectangleShape74";
-            this.rectangleShape56.Size = new System.Drawing.Size(8, 10);
-            // 
-            // rectangleShape57
-            // 
-            this.rectangleShape57.Location = new System.Drawing.Point(24, 19);
-            this.rectangleShape57.Name = "rectangleShape72";
-            this.rectangleShape57.Size = new System.Drawing.Size(19, 108);
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
@@ -2045,8 +1909,10 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(1, 34);
+            this.monthCalendar1.Location = new System.Drawing.Point(1, 33);
+            this.monthCalendar1.MaxDate = new System.DateTime(2018, 12, 31, 0, 0, 0, 0);
             this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -2056,11 +1922,11 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(148, 9);
+            this.label9.Location = new System.Drawing.Point(10, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 15);
+            this.label9.Size = new System.Drawing.Size(211, 15);
             this.label9.TabIndex = 7;
-            this.label9.Text = "Select Date |";
+            this.label9.Text = "Reservation Date | Select vacant date.";
             // 
             // panel6
             // 
@@ -2070,7 +1936,7 @@
             this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.label31);
             this.panel6.Controls.Add(this.label32);
-            this.panel6.Location = new System.Drawing.Point(415, 511);
+            this.panel6.Location = new System.Drawing.Point(416, 511);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(232, 72);
             this.panel6.TabIndex = 13;
@@ -2105,15 +1971,15 @@
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(147, 8);
+            this.label32.Location = new System.Drawing.Point(11, 11);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(76, 15);
+            this.label32.Size = new System.Drawing.Size(216, 15);
             this.label32.TabIndex = 7;
-            this.label32.Text = "Select Meal |";
+            this.label32.Text = "Type of Meal | Choose preferred meal.";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(506, 586);
+            this.button2.Location = new System.Drawing.Point(501, 586);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 16;
@@ -2127,7 +1993,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(86, 10);
+            this.label8.Location = new System.Drawing.Point(96, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 15);
             this.label8.TabIndex = 7;
@@ -2138,37 +2004,17 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 62);
+            this.label10.Location = new System.Drawing.Point(33, 62);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 15);
+            this.label10.Size = new System.Drawing.Size(58, 15);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Vacant";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 90);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 15);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "To be reserved";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Location = new System.Drawing.Point(142, 34);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(67, 21);
-            this.panel20.TabIndex = 11;
+            this.label10.Text = "Available";
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.Transparent;
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Location = new System.Drawing.Point(142, 60);
+            this.panel22.Location = new System.Drawing.Point(130, 60);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(67, 21);
             this.panel22.TabIndex = 12;
@@ -2178,24 +2024,34 @@
             this.panel5.BackColor = System.Drawing.Color.Beige;
             this.panel5.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.images_4;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label30);
             this.panel5.Controls.Add(this.panel30);
             this.panel5.Controls.Add(this.panel22);
-            this.panel5.Controls.Add(this.panel20);
-            this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(415, 174);
+            this.panel5.Location = new System.Drawing.Point(416, 174);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(232, 122);
             this.panel5.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(20, 91);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(189, 19);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Create a reservation now!";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(13, 36);
+            this.label30.Location = new System.Drawing.Point(33, 41);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(58, 15);
             this.label30.TabIndex = 14;
@@ -2205,10 +2061,90 @@
             // 
             this.panel30.BackColor = System.Drawing.Color.Tomato;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Location = new System.Drawing.Point(142, 87);
+            this.panel30.Location = new System.Drawing.Point(130, 35);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(67, 21);
             this.panel30.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.panel23);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Font = new System.Drawing.Font("Monotype Corsiva", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(636, 84);
+            this.panel1.TabIndex = 41;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(584, 7);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(17, 24);
+            this.label29.TabIndex = 43;
+            this.label29.Text = "-";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(606, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(20, 19);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "X";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // panel23
+            // 
+            this.panel23.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.icon;
+            this.panel23.Location = new System.Drawing.Point(149, 7);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(62, 62);
+            this.panel23.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(286, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "09987654321";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(217, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(251, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "123 Eybisi St. SYSTeam Ave. Manila City";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(251, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cravings Restaurant";
             // 
             // Form1
             // 
@@ -2217,21 +2153,18 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 621);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRecords1)).EndInit();
@@ -2257,23 +2190,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label Home1;
         private System.Windows.Forms.PictureBox btnRecords1;
@@ -2285,21 +2215,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Panel panel13;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer10;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape61;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape60;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape59;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape58;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape49;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape50;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape51;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape52;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape53;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape54;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape55;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape56;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape57;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
@@ -2310,8 +2225,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -2340,7 +2253,6 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape32;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape31;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape30;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape128;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape127;
@@ -2455,10 +2367,6 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape88;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape87;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape86;
-        private System.Windows.Forms.Label label16;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape71;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label31;
@@ -2484,12 +2392,18 @@
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
